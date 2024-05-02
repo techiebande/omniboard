@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/tabs.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-bodyBg font-SogoeUI box-border">
+    <div class="flex">
+      <!-- Sidebar Start -->
+      <aside
+        id="sidebar"
+        class="w-[72px] lg:w-[240px] bg-sideBarBg h-[100vh] sticky top-0 pt-4 transition-[width]"
+      >
+        <div class="w-full flex justify-center items-center gap-[10px]">
+          <div
+            class="w-[34px] h-[34px] border border-white rounded-[10px] flex items-center justify-center text-white font-SogoeUIBold text-sm z-50"
+          >
+            OB
+          </div>
+          <span
+            id="brandName"
+            class="hidden lg:block text-white font-SogoeUIBold"
+            >OMNIBOARD</span
+          >
+        </div>
+        <div class="w-full mt-[33px] flex flex-col gap-[30px] pl-[15px]">
+          <a
+            href="/src/html/dashboard.html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img src="../assets/icons/Home-active.svg" alt="" class="z-50" />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../assets/icons/Home.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Dashboard
+            </p>
+          </a>
+
+          <a
+            href="/src/html/users.html"
+            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img src="../assets/icons/Users-active.svg" alt="" class="z-50" />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../assets/icons/Users.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Users
+            </p>
+          </a>
+
+          <a
+            href="/src/html/messages.html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../assets/icons/Message-active.svg"
+                alt=""
+                class="z-50"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../assets/icons/Message.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Messages
+            </p>
+          </a>
+
+          <a
+            href="/src/html/settings.html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../assets/icons/Setting-active.svg"
+                alt=""
+                class="z-50"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../assets/icons/Setting.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Settings
+            </p>
+          </a>
+        </div>
+      </aside>
+      <!-- Sidebar End -->
+
+      <main
+        id="main-content"
+        class="flex flex-col relative w-[calc(100%-72px)] lg:w-[calc(100%-240px)]"
+      >
+        <!-- Navbar start -->
+        <nav
+          class="h-[83px] w-full flex items-center bg-white px-2 md:px-5 lg:justify-between"
+        >
+          <div class="hidden lg:block">
+            <button id="sidebarFoldButton">
+              <img
+                src="../assets/icons/menu-fold-line.svg"
+                alt="toggle sidebar state icon"
+                class="w-[20px] h-5"
+              />
+            </button>
+            <button class="hidden" id="sidebarUnfoldButton">
+              <img
+                src="../assets/icons/menu-unfold-line.svg"
+                alt="toggle sidebar state icon"
+                class="w-[20px] h-[20px]"
+              />
+            </button>
+          </div>
+
+          <div class="flex items-center gap-3 lg:gap-5">
+            <div class="flex items-center mr-3 lg:mr-5">
+              <input
+                type="text"
+                placeholder="Search for results..."
+                class="h-10 rounded-[29px] w-[150px] md:w-[259px] rounded-tr-none rounded-br-none outline-none bg-inputBg border-none pl-5 font-SogoeUI text-sm"
+              />
+              <button
+                class="bg-blue rounded-[29px] rounded-bl-none rounded-tl-none h-10 w-[46px] flex items-center justify-center"
+              >
+                <img src="../assets/icons/search.svg" />
+              </button>
+            </div>
+            <div
+              class="hidden lg:block w-[26px] h-[26px] bg-[url('../assets/img/flags/GB.svg')] rounded-full border bg-center bg-cover"
+            ></div>
+            <div class="hidden lg:flex relative w-[30px] h-[30px] items-center">
+              <img src="../assets/icons/bell.svg" alt="bell icon" />
+              <p
+                class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
+              >
+                <span class="relative top-[1px] w-min">18</span>
+              </p>
+            </div>
+            <div class="hidden lg:flex items-center gap-[14px] mr-3">
+              <div
+                class="bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-full bg-center bg-cover"
+              ></div>
+              <div class="items-start gap-1 hidden lg:flex">
+                <div class="flex flex-col gap-1">
+                  <p class="poppins-medium text-sm">Marvel Major</p>
+                  <span class="text-[9px] poppins-regular">Super Admin</span>
+                </div>
+
+                <i class="ri-arrow-down-s-line text-grey1"></i>
+              </div>
+            </div>
+          </div>
+          <div id="dropdown-menu-button" class="lg:hidden ml-auto">
+            <button class="w-6 h-6">
+              <img src="../assets/icons/menu-line.svg" alt="" />
+            </button>
+          </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- User Dropdown -->
+        <div
+          id="user-dropdown"
+          class="hidden lg:hidden w-[200px] absolute top-[65px] shadow right-0 bg-white p-2 space-y-4 rounded-md"
+        >
+          <div class="items-center gap-[14px] mr-3 flex">
+            <div
+              class="bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-full bg-center bg-cover"
+            ></div>
+            <div class="items-start gap-1 flex">
+              <div class="flex flex-col gap-1">
+                <p class="poppins-medium text-sm">Marvel Major</p>
+                <span class="text-[9px] poppins-regular">Super Admin</span>
+              </div>
+
+              <i class="ri-arrow-down-s-line text-grey1"></i>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              class="w-[26px] h-[26px] bg-[url('../assets/img/flags/GB.svg')] rounded-full border bg-center bg-cover"
+            ></div>
+            <div class="flex relative w-[30px] h-[30px] items-center">
+              <img src="../assets/icons/bell.svg" alt="bell icon" />
+              <p
+                class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
+              >
+                <span class="relative top-[1px] w-min">18</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- User dropdown End -->
+
+        <!-- Page Detail Start -->
+        <div
+          class="flex flex-col space-y-5 lg:flex-row justify-between px-2 lg:px-5 mt-5"
+        >
+          <div>
+            <p class="font-SogoeUISemibold text-[24px] text-black">Users</p>
+            <span class="font-SogoeUI text-sm text-grey3">Home / Users</span>
+          </div>
+          <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
+            <button
+              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
+            >
+              <img
+                src="../assets/icons/upload.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="lg:text-sm text-xs rounded-[4px]">Import</span>
+            </button>
+            <button
+              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
+            >
+              <img
+                src="../assets/icons/filter.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="lg:text-sm text-xs rounded-[4px]">Filter</span>
+            </button>
+            <button
+              class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
+            >
+              <img
+                src="../assets/icons/download.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="text-xs lg:text-sm text-nowrap"
+                >Download Report</span
+              >
+            </button>
+            <button
+              id="addNewUserButton"
+              class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
+            >
+              <img
+                src="../assets/icons/plus.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="text-xs lg:text-sm text-nowrap">New User</span>
+            </button>
+          </div>
+        </div>
+        <!-- Page Detail End -->
+
+        <!-- Users table Start -->
+        <div
+          class="overflow-x-auto mx-5 mt-5 w-calc(100%-40px) mb-5 bg-white rounded-[20px]"
+        >
+          <table class="w-full max-w-full">
+            <thead class="text-xs md:text-sm font-SogoeUISemibold text-left">
+              <tr class="">
+                <th class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </th>
+                <th class="px-5 pl-0 py-[14px]">ID</th>
+                <th class="px-5 py-[14px]">NAME</th>
+                <th class="px-5 py-[14px]">EMAIL</th>
+                <th class="px-5 py-[14px]">COMPANY</th>
+                <th class="px-5 py-[14px]">STATUS</th>
+                <th class="px-5 py-[14px]">CREATED</th>
+                <th class="px-5 py-[14px] pr-0 w-[20px]">ACTION</th>
+              </tr>
+            </thead>
+            <tbody class="text-xs md:text-sm font-SogoeUI text-left">
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-green"></div>
+                    <span>Active</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-grey3"></div>
+                    <span>Inactive</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-red"></div>
+                    <span>Banned</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-pending"></div>
+                    <span>Pending</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-green"></div>
+                    <span>Active</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-grey3"></div>
+                    <span>Inactive</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-green"></div>
+                    <span>Active</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-grey3"></div>
+                    <span>Inactive</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-green"></div>
+                    <span>Active</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="users-row">
+                <td class="px-5 pr-2 py-[14px]">
+                  <input type="checkbox" />
+                </td>
+                <td class="px-5 pl-0 py-[14px]">20</td>
+                <td class="px-5 py-[14px] text-nowrap">Josh Hyatt</td>
+                <td class="px-5 py-[14px]">example@email.com</td>
+                <td class="px-5 py-[14px]">Morar LTD</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-1">
+                    <div class="h-3 w-3 rounded-full bg-grey3"></div>
+                    <span>Inactive</span>
+                  </div>
+                </td>
+                <td class="px-5 py-[14px] text-nowrap">10-05-2022</td>
+                <td class="px-5 py-[14px]">
+                  <div class="flex items-center gap-[10px]">
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/edit.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-brightRed cursor-pointer"
+                    >
+                      <img
+                        src="../assets/icons/delete.svg"
+                        class="w-[13px] h-[13px]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div
+            class="flex items-center justify-between py-5 w-full max-w-full px-5"
+          >
+            <p class="font-SogoeUI text-xs text-black2">
+              Showing 1 to 10 of 20 entries
+            </p>
+            <div class="flex items-center gap-4">
+              <button
+                class="flex rounded-[5px] border border-grey6 items-center justify-center text-[12px] font-SogoeUI text-grey3 px-[14px] py-[7px]"
+              >
+                Previous
+              </button>
+              <button
+                class="flex rounded-[5px] border border-grey6 items-center justify-center text-[12px] font-SogoeUI text-grey3 px-[14px] py-[7px]"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Users table End -->
+
+        <!-- Add user modal start -->
+        <div
+          id="addUserModal"
+          class="hidden fixed top-0 left-0 w-[100vw] h-[100vh] bg-transparentBlack items-center justify-center"
+        >
+          <div
+            id="addUserModalContent"
+            class="relative w-[95%] md:w-[70%] h-[80%] bg-white rounded-[20px] z-50 pt-10 pb-6 overflow-y-auto"
+          >
+            <div
+              class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between"
+            >
+              <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+                ADD NEW USER
+              </h2>
+              <button id="addNewUserCloseButton">
+                <img
+                  src="../assets/icons/close-line.svg"
+                  alt=""
+                  class="w-4 h-4 cursor-pointer"
+                />
+              </button>
+            </div>
+            <form class="px-3 md:px-[60px] mt-5">
+              <h3 class="font-SogoeUIBold text-darkBlue">ACCOUNT DETAILS</h3>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-y-5 gap-x-[48px]"
+              >
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Client Name <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="John Hyatt"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Client Email <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="email"
+                    name=""
+                    placeholder="example@example.com"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Password <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="password"
+                    name=""
+                    placeholder="123Password"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Mobile Number <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="123Password"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for="">Gender </label>
+                  <select
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  >
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                  </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-x-2 md:gap-x-10 gap-y-5">
+                  <div class="space-y-[10px] flex flex-col">
+                    <p class="text-sm">Can User log in to the app</p>
+                    <div class="flex items-center gap-5">
+                      <label class="flex items-center gap-[6px]">
+                        <input
+                          type="radio"
+                          name="canUserLogin"
+                          class="hidden"
+                        />
+                        <div
+                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                        ></div>
+                        Yes
+                      </label>
+
+                      <label class="flex items-center gap-[6px]">
+                        <input
+                          type="radio"
+                          name="canUserLogin"
+                          class="hidden"
+                        />
+                        <div
+                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                        ></div>
+                        No
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="space-y-[10px] flex flex-col">
+                    <p class="text-sm">Can Receive email notification</p>
+                    <div class="flex items-center gap-5">
+                      <label class="flex items-center gap-[6px]">
+                        <input
+                          type="radio"
+                          name="receiveEmail"
+                          class="hidden"
+                        />
+                        <div
+                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                        ></div>
+                        Yes
+                      </label>
+
+                      <label class="flex items-center gap-[6px]">
+                        <input
+                          type="radio"
+                          name="receiveEmail"
+                          class="hidden"
+                        />
+                        <div
+                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                        ></div>
+                        No
+                      </label>
+                    </div>
+                  </div>
+                  <div class="space-y-[10px] flex flex-col">
+                    <p class="text-sm">Status</p>
+                    <div class="flex items-center gap-5">
+                      <label class="flex items-center gap-[6px]">
+                        <input type="radio" name="status" class="hidden" />
+                        <div
+                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                        ></div>
+                        Inactive
+                      </label>
+
+                      <label class="flex items-center gap-[6px]">
+                        <input type="radio" name="status" class="hidden" />
+                        <div
+                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                        ></div>
+                        Active
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative sm:-top-[80px]">
+                  <label class="text-sm mt-2" for="">Profile Picture</label>
+                  <div
+                    class="border border-dashed border-grey7 flex items-center justify-center h-[163px] py-2"
+                  >
+                    <label class="flex bg-grey8 py-[64px] px-[35px]">
+                      Upload a photo<input type="file" class="hidden" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[15px]"
+              >
+                <img
+                  src="../assets/icons/Icon feather-check.svg"
+                  class="w-[17px] h-[11px]"
+                />
+                Save
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Add user modal end -->
+      </main>
+    </div>
+
+    <script>
+      const body = document.querySelector("body");
+      const sidebar = document.querySelector("#sidebar");
+      const sidebarFoldButton = document.querySelector("#sidebarFoldButton");
+      const sidebarUnfoldButton = document.querySelector(
+        "#sidebarUnfoldButton"
+      );
+      const foldIcon = document.querySelector("#foldIcon");
+      const unfoldIcon = document.querySelector("#unfoldIcon");
+      const brandName = document.querySelector("#brandName");
+      const dashboardItemNAme = document.querySelectorAll(".dashboardItemName");
+      const mainContent = document.querySelector("#main-content");
+
+      const dropdownMenuButton = document.querySelector(
+        "#dropdown-menu-button"
+      );
+
+      const sidebarItems = document.querySelectorAll(".sidebar-item");
+
+      const tabItems = document.querySelectorAll(".tab");
+
+      const addNewUserButton = document.querySelector("#addNewUserButton");
+      const addNewUserModal = document.querySelector("#addUserModal");
+      const addNewUserCloseButton = document.querySelector(
+        "#addNewUserCloseButton"
+      );
+
+      const addUserModalContent = document.querySelector(
+        "#addUserModalContent"
+      );
+
+      addNewUserButton.addEventListener("click", () => {
+        addNewUserModal.classList.remove("hidden");
+        addNewUserModal.classList.add("flex");
+      });
+
+      addNewUserCloseButton.addEventListener("click", () => {
+        addNewUserModal.classList.remove("flex");
+        addNewUserModal.classList.add("hidden");
+      });
+
+      tabItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const activeTab = document.querySelector(".tab.active-tab");
+
+          if (activeTab) {
+            activeTab.classList.remove("active-tab");
+          }
+          item.classList.add("active-tab");
+        });
+      });
+
+      sidebarItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const activeSidebarItem = document.querySelector(
+            ".sidebar-item.active-sidebar-item"
+          );
+
+          if (activeSidebarItem) {
+            activeSidebarItem.classList.remove("active-sidebar-item");
+          }
+
+          item.classList.add("active-sidebar-item");
+        });
+      });
+
+      const userDropdown = document.querySelector("#user-dropdown");
+
+      body.addEventListener("click", (event) => {
+        let userDropdown = document.getElementById("user-dropdown");
+        var target = event.target;
+
+        if (
+          target === dropdownMenuButton ||
+          dropdownMenuButton.contains(target)
+        ) {
+          userDropdown.classList.toggle("hidden");
+        } else {
+          if (target !== userDropdown && !userDropdown.contains(target)) {
+            userDropdown.classList.add("hidden");
+          }
+        }
+      });
+
+      addNewUserModal.addEventListener("click", (event) => {
+        const target = event.target;
+        if (
+          target !== addUserModalContent &&
+          !addUserModalContent.contains(target)
+        ) {
+          addNewUserModal.classList.remove("flex");
+          addNewUserModal.classList.add("hidden");
+        }
+      });
+
+      sidebarFoldButton.addEventListener("click", () => {
+        foldSidebar();
+      });
+
+      sidebarUnfoldButton.addEventListener("click", () => {
+        unfoldSidebar();
+      });
+
+      const foldSidebar = () => {
+        sidebar.classList.remove("lg:w-[240px]");
+        sidebar.classList.add("lg:w-[72px]");
+        mainContent.classList.remove("lg:w-[calc(100%-240px)]");
+        mainContent.classList.remove("lg:w-[calc(100%-72px)]");
+        sidebarFoldButton.classList.add("hidden");
+        sidebarUnfoldButton.classList.remove("hidden");
+        sidebarUnfoldButton.classList.add("block");
+        brandName.classList.add("lg:hidden");
+
+        dashboardItemNAme.forEach((name) => {
+          name.classList.add("lg:hidden");
+        });
+      };
+
+      const unfoldSidebar = () => {
+        sidebar.classList.remove("lg:w-[72px]");
+        sidebar.classList.add("lg:w-[240px]");
+        mainContent.classList.remove("lg:w-[calc(100%-72px)]");
+        mainContent.classList.remove("lg:w-[calc(100%-240px)]");
+        sidebarUnfoldButton.classList.add("hidden");
+        sidebarFoldButton.classList.remove("hidden");
+        sidebarFoldButton.classList.add("block");
+        brandName.classList.remove("lg:hidden");
+
+        dashboardItemNAme.forEach((name) => {
+          name.classList.remove("lg:hidden");
+        });
+      };
+    </script>
+  </body>
+</html>

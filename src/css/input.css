@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SogoeUI";
+  src: url("../assets/fonts/segoe-ui/Segoe\ UI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SogoeUIBold";
+  src: url("../assets/fonts/segoe-ui/Segoe\ UI\ Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SogoeUISemiBold";
+  src: url("../assets/fonts/segoe-ui/SegoeUISemibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.users-row:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+input[type="radio"]:checked + div {
+  border-width: 4px;
+  border-color: #1d82f5;
+}

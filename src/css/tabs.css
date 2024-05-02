@@ -1,0 +1,8 @@
+.tab {
+  cursor: pointer;
+}
+.active-tab {
+  background-color: white;
+  border-color: #f5f5f5;
+  color: #1d82f5;
+}

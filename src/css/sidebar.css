@@ -1,0 +1,54 @@
+.active-sidebar-item.sidebar-item {
+  background-color: #eaedf7;
+}
+.active-sidebar-item.sidebar-item .top-right-rounded {
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
+
+.active-sidebar-item.sidebar-item .bottom-right-rounded {
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+}
+.active-sidebar-item.sidebar-item .top-right-rounded div:first-child {
+  width: 40px;
+  height: 40px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  background-color: #0e0e23;
+}
+
+.active-sidebar-item.sidebar-item .top-right-rounded div:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  background-color: #eaedf7;
+}
+
+.active-sidebar-item.sidebar-item .bottom-right-rounded div:first-child {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-top-right-radius: 20px;
+  background-color: #0e0e23;
+}
+.active-sidebar-item.sidebar-item .bottom-right-rounded div:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  background-color: #eaedf7;
+}
+.active-sidebar-item.sidebar-item #icon-wrapper {
+  display: flex;
+  background-color: #1d82f5;
+  min-width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 99;
+}
