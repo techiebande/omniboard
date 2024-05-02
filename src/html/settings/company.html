@@ -506,18 +506,18 @@
 
       const sidebarItems = document.querySelectorAll(".sidebar-item");
 
-      const tabItems = document.querySelectorAll(".tab");
+      // const tabItems = document.querySelectorAll(".tab");
 
-      tabItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          const activeTab = document.querySelector(".tab.active-tab");
+      // tabItems.forEach((item) => {
+      //   item.addEventListener("click", () => {
+      //     const activeTab = document.querySelector(".tab.active-tab");
 
-          if (activeTab) {
-            activeTab.classList.remove("active-tab");
-          }
-          item.classList.add("active-tab");
-        });
-      });
+      //     if (activeTab) {
+      //       activeTab.classList.remove("active-tab");
+      //     }
+      //     item.classList.add("active-tab");
+      //   });
+      // });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {
