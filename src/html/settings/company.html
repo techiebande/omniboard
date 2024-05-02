@@ -7,19 +7,19 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../../css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="../css/sidebar.css" />
-    <link rel="stylesheet" href="../css/tabs.css" />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/tabs.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
     <title>Document</title>
   </head>
-  <body class="bg-bodyBg poppins-regular">
+  <body class="bg-bodyBg font-SogoeUI box-border">
     <div class="flex">
       <!-- Sidebar Start -->
       <aside
@@ -41,7 +41,7 @@
         <div class="w-full mt-[33px] flex flex-col gap-[30px] pl-[15px]">
           <a
             href="/html"
-            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -54,13 +54,17 @@
             </div>
 
             <div id="icon-wrapper" class="hidden">
-              <img src="../assets/icons/Home-active.svg" alt="" class="z-50" />
+              <img
+                src="../../assets/icons/Home-active.svg"
+                alt=""
+                class="z-50"
+              />
             </div>
 
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
-              <img src="../assets/icons/Home.svg" alt="" class="z-50" />
+              <img src="../../assets/icons/Home.svg" alt="" class="z-50" />
             </div>
 
             <p
@@ -85,13 +89,17 @@
             </div>
 
             <div id="icon-wrapper" class="hidden">
-              <img src="../assets/icons/Users-active.svg" alt="" class="z-50" />
+              <img
+                src="../../assets/icons/Users-active.svg"
+                alt=""
+                class="z-50"
+              />
             </div>
 
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
-              <img src="../assets/icons/Users.svg" alt="" class="z-50" />
+              <img src="../../assets/icons/Users.svg" alt="" class="z-50" />
             </div>
 
             <p
@@ -117,7 +125,7 @@
 
             <div id="icon-wrapper" class="hidden">
               <img
-                src="../assets/icons/Message-active.svg"
+                src="../../assets/icons/Message-active.svg"
                 alt=""
                 class="z-50"
               />
@@ -126,7 +134,7 @@
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
-              <img src="../assets/icons/Message.svg" alt="" class="z-50" />
+              <img src="../../assets/icons/Message.svg" alt="" class="z-50" />
             </div>
 
             <p
@@ -138,7 +146,7 @@
 
           <a
             href="/html/settings/company.html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -152,7 +160,7 @@
 
             <div id="icon-wrapper" class="hidden">
               <img
-                src="../assets/icons/Setting-active.svg"
+                src="../../assets/icons/Setting-active.svg"
                 alt=""
                 class="z-50"
               />
@@ -161,7 +169,7 @@
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
-              <img src="../assets/icons/Setting.svg" alt="" class="z-50" />
+              <img src="../../assets/icons/Setting.svg" alt="" class="z-50" />
             </div>
 
             <p
@@ -185,14 +193,14 @@
           <div class="hidden lg:block">
             <button id="sidebarFoldButton">
               <img
-                src="../assets/icons/menu-fold-line.svg"
+                src="../../assets/icons/menu-fold-line.svg"
                 alt="toggle sidebar state icon"
                 class="w-[20px] h-5"
               />
             </button>
             <button class="hidden" id="sidebarUnfoldButton">
               <img
-                src="../assets/icons/menu-unfold-line.svg"
+                src="../../assets/icons/menu-unfold-line.svg"
                 alt="toggle sidebar state icon"
                 class="w-[20px] h-[20px]"
               />
@@ -204,19 +212,20 @@
               <input
                 type="text"
                 placeholder="Search for results..."
-                class="h-10 rounded-[29px] w-[150px] md:w-[259px] rounded-tr-none rounded-br-none outline-none bg-inputBg border-none pl-5 font-SogoeUI text-sm"
+                class="h-10 rounded-[29px] w-[150px] md:w-[259px] rounded-tr-none rounded-br-none outline-none border-none pl-5 font-SogoeUI text-sm"
               />
               <button
                 class="bg-blue rounded-[29px] rounded-bl-none rounded-tl-none h-10 w-[46px] flex items-center justify-center"
               >
-                <img src="../assets/icons/search.svg" />
+                <img src="../../assets/icons/search.svg" />
               </button>
             </div>
             <div
-              class="hidden lg:block w-[26px] h-[26px] bg-[url('../assets/img/flags/GB.svg')] rounded-full border bg-center bg-cover"
+              style="background-image: url(../../assets/img/flags/GB.svg)"
+              class="hidden lg:block w-[26px] h-[26px] rounded-full border bg-center bg-cover"
             ></div>
             <div class="hidden lg:flex relative w-[30px] h-[30px] items-center">
-              <img src="../assets/icons/bell.svg" alt="bell icon" />
+              <img src="../../assets/icons/bell.svg" alt="bell icon" />
               <p
                 class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
               >
@@ -225,7 +234,8 @@
             </div>
             <div class="hidden lg:flex items-center gap-[14px] mr-3">
               <div
-                class="bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-full bg-center bg-cover"
+                style="background-image: url(../../assets/img/users/marvel.svg)"
+                class="w-[35px] h-[35px] rounded-full bg-center bg-cover"
               ></div>
               <div class="items-start gap-1 hidden lg:flex">
                 <div class="flex flex-col gap-1">
@@ -239,7 +249,7 @@
           </div>
           <div id="dropdown-menu-button" class="lg:hidden ml-auto">
             <button class="w-6 h-6">
-              <img src="../assets/icons/menu-line.svg" alt="" />
+              <img src="../../assets/icons/menu-line.svg" alt="" />
             </button>
           </div>
         </nav>
@@ -252,7 +262,8 @@
         >
           <div class="items-center gap-[14px] mr-3 flex">
             <div
-              class="bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-full bg-center bg-cover"
+              style="background-image: url(../../assets/img/users/marvel.svg)"
+              class="w-[35px] h-[35px] rounded-full bg-center bg-cover"
             ></div>
             <div class="items-start gap-1 flex">
               <div class="flex flex-col gap-1">
@@ -265,10 +276,11 @@
           </div>
           <div class="flex items-center space-x-4">
             <div
-              class="w-[26px] h-[26px] bg-[url('../assets/img/flags/GB.svg')] rounded-full border bg-center bg-cover"
+              style="background-image: url(../../assets/img/flags/GB.svg)"
+              class="w-[26px] h-[26px] rounded-full border bg-center bg-cover"
             ></div>
             <div class="flex relative w-[30px] h-[30px] items-center">
-              <img src="../assets/icons/bell.svg" alt="bell icon" />
+              <img src="../../assets/icons/bell.svg" alt="bell icon" />
               <p
                 class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
               >
@@ -284,28 +296,58 @@
           class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto bg-inputBg"
         >
           <div
-            class="tab active-tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab active-tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Admin Dashboard</span>
+            <span class="text-nowrap">Company Settings</span>
           </div>
           <div
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Private Dashboard</span>
+            <span class="text-nowrap">Business Address</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">App Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Profile Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Notification Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Currency Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Payment Credentials</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap"
+              >More <i class="ri-arrow-down-s-line text-grey1"></i
+            ></span>
           </div>
         </div>
         <!-- Tabs End -->
 
-        <!-- Welcome section start -->
+        <!-- Page Detail Start -->
         <div
           class="flex flex-col space-y-5 lg:flex-row justify-between px-2 lg:px-5 mt-5"
         >
           <div>
-            <p class="font-SogoeUISemibold text-[24px] text-black">
-              Welcome To Dashboard
-            </p>
+            <p class="font-SogoeUISemibold text-[24px] text-black">Settings</p>
             <span class="font-SogoeUI text-sm text-grey3"
-              >Home / Admin Dashboard</span
+              >Home / Company Settings</span
             >
           </div>
           <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
@@ -313,7 +355,7 @@
               class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
             >
               <img
-                src="../assets/icons/upload.svg"
+                src="../../assets/icons/upload.svg"
                 alt=""
                 class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
               />
@@ -323,7 +365,7 @@
               class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
             >
               <img
-                src="../assets/icons/filter.svg"
+                src="../../assets/icons/filter.svg"
                 alt=""
                 class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
               />
@@ -333,7 +375,7 @@
               class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
             >
               <img
-                src="../assets/icons/download.svg"
+                src="../../assets/icons/download.svg"
                 alt=""
                 class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
               />
@@ -343,216 +385,105 @@
             </button>
           </div>
         </div>
-        <!-- Welcome section end -->
+        <!-- Page Detail End -->
 
-        <!-- Hero section start -->
-        <div
-          class="relative flex justify-center bg-blue w-[95%] lg:w-[78%] rounded-[10px] ml-2 lg:ml-5 text-white mt-[58px] h-[156px]"
-        >
-          <img
-            src="../assets/img/hero.png"
-            alt=""
-            class="absolute bottom-0 -left-[5px]"
-          />
-          <div class="ml-5 lg:-ml-[50px] mt-[23px] z-50 absolute">
-            <p class="text-[24px] font-SogoeUIBold">Marvel Major</p>
-            <p class="text-sm font-SogoeUI">
-              You have two projects to finish, you had completed 57% from your
-              montly level,
-            </p>
-            <p class="text-sm font-SogoeUI">Keep going to your level</p>
-          </div>
-        </div>
-        <!-- Hero section end -->
-
-        <!-- Stats section Start -->
-
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 px-5 gap-5 justify-between"
-        >
+        <!-- Company Settings Start -->
+        <div class="bg-white rounded-[20px] pt-5 mt-5 pb-6 mx-5">
           <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
+            class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between"
           >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">Total Users</p>
-              <span class="text-black font-SogoeUIBold text-2xl">31</span>
-            </div>
+            <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+              Company Settings
+            </h2>
+          </div>
+          <form class="px-3 md:px-[60px] mt-5">
             <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
+              class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-y-5 gap-x-[48px]"
+            >
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >Company Name <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="text"
+                  name=""
+                  placeholder="John Hyatt"
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >Company Email <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="email"
+                  name=""
+                  placeholder="example@example.com"
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >Company Phone <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="text"
+                  name=""
+                  placeholder="123Password"
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >Company Website <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="text"
+                  name=""
+                  placeholder="123Password"
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >Company Phone <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="text"
+                  name=""
+                  placeholder="123Password"
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >Company Website <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="text"
+                  name=""
+                  placeholder="123Password"
+                />
+              </div>
+            </div>
+            <button
+              class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-10"
             >
               <img
-                src="../assets/icons/user-group.svg"
-                class="w-6 h-6"
-                alt=""
+                src="../../assets/icons/Icon feather-check.svg"
+                class="w-[17px] h-[11px]"
               />
-            </div>
-          </div>
-
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">Total Employees</p>
-              <span class="text-black font-SogoeUIBold text-2xl">32</span>
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img src="../assets/icons/Profile.svg" class="w-6 h-6" alt="" />
-            </div>
-          </div>
-
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">Pending Tasks</p>
-              <span class="text-black font-SogoeUIBold text-2xl">38</span>
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img
-                src="../assets/icons/awesome-layer-group.svg"
-                class="w-6 h-6"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">Due Invoices</p>
-              <span class="text-black font-SogoeUIBold text-2xl">55</span>
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img
-                src="../assets/icons/awesome-layer-group.svg"
-                class="w-6 h-6"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">Hours Logged</p>
-              <span class="text-black font-SogoeUIBold text-2xl"
-                >611 Hours</span
-              >
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img
-                src="../assets/icons/TimeCircle.svg"
-                class="w-6 h-6"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">pending Tasks</p>
-              <span class="text-black font-SogoeUIBold text-2xl">38</span>
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img src="../assets/icons/hamburger.svg" class="w-6 h-6" alt="" />
-            </div>
-          </div>
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">
-                Today's Attendance
-              </p>
-              <span class="text-black font-SogoeUIBold text-2xl">0/32</span>
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img src="../assets/icons/Calendar.svg" class="w-6 h-6" alt="" />
-            </div>
-          </div>
-          <div
-            class="p-5 flex items-center bg-white shadow-sm rounded-[10px] justify-between"
-          >
-            <div class="flex flex-col space-y-[10px]">
-              <p class="font-SogoeUI text-sm text-darkBlue">Unsolved Tickets</p>
-              <span class="text-black font-SogoeUIBold text-2xl">7</span>
-            </div>
-            <div
-              class="w-[43px] h-[43px] rounded-full bg-bodyBg flex items-center justify-center"
-            >
-              <img src="../assets/icons/Ticket.svg" class="w-6 h-6" alt="" />
-            </div>
-          </div>
+              Save
+            </button>
+          </form>
         </div>
-        <!-- Stats Section End -->
-
-        <!-- Charts Section Start -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 mt-5 px-5 gap-5 justify-between mb-5"
-        >
-          <div class="rounded-[10px] p-1 md:p-5 bg-white">
-            <p class="text-sm font-SogoeUIBold mb-5">Earnings</p>
-            <canvas id="chartjs-bar"></canvas>
-          </div>
-
-          <div class="rounded-[10px] p-1 md:p-5 bg-white">
-            <p class="text-sm font-SogoeUIBold mb-5">Time Logs</p>
-            <div id="echart-basic-line" class="h-[20rem]"></div>
-          </div>
-        </div>
-
-        <!-- Charts Section End -->
-
-        <!-- Bottoms tabs Start -->
-        <div
-          class="mt-auto flex items-start text-[14px] gap-[10px] font-SogoeUISemibold overflow-x-auto bg-inputBg"
-        >
-          <div
-            class="tab active-tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Overview</span>
-          </div>
-          <div
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Project</span>
-          </div>
-          <div
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Client</span>
-          </div>
-          <div
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">HR</span>
-          </div>
-          <div
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Ticket</span>
-          </div>
-          <div
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Finance</span>
-          </div>
-        </div>
-        <!-- Bottom tabs End -->
+        <!-- Company Settings End -->
       </main>
     </div>
 
@@ -658,11 +589,5 @@
         });
       };
     </script>
-
-    <script src="../assets/libs/chart.js/chart.min.js"></script>
-    <script src="../assets/js/chartjs-charts.js"></script>
-
-    <script src="../assets/libs/echarts/echarts/echarts.min.js"></script>
-    <script src="../assets/js/echarts.js"></script>
   </body>
 </html>
