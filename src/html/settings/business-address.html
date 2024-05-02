@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../../css/sidebar.css" />
+    <link rel="stylesheet" href="../../css/tabs.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-bodyBg font-SogoeUI box-border">
+    <div class="flex">
+      <!-- Sidebar Start -->
+      <aside
+        id="sidebar"
+        class="w-[72px] lg:w-[240px] bg-sideBarBg h-[100vh] sticky top-0 pt-4 transition-[width]"
+      >
+        <div class="w-full flex justify-center items-center gap-[10px]">
+          <div
+            class="w-[34px] h-[34px] border border-white rounded-[10px] flex items-center justify-center text-white font-SogoeUIBold text-sm z-50"
+          >
+            OB
+          </div>
+          <span
+            id="brandName"
+            class="hidden lg:block text-white font-SogoeUIBold"
+            >OMNIBOARD</span
+          >
+        </div>
+        <div class="w-full mt-[33px] flex flex-col gap-[30px] pl-[15px]">
+          <a
+            href="/html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../../assets/icons/Home-active.svg"
+                alt=""
+                class="z-50"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../../assets/icons/Home.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Dashboard
+            </p>
+          </a>
+
+          <a
+            href="/html/users.html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../../assets/icons/Users-active.svg"
+                alt=""
+                class="z-50"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../../assets/icons/Users.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Users
+            </p>
+          </a>
+
+          <a
+            href="/html/messages.html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../../assets/icons/Message-active.svg"
+                alt=""
+                class="z-50"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../../assets/icons/Message.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Messages
+            </p>
+          </a>
+
+          <a
+            href="/html/settings/company.html"
+            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../../assets/icons/Setting-active.svg"
+                alt=""
+                class="z-50"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img src="../../assets/icons/Setting.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Settings
+            </p>
+          </a>
+        </div>
+      </aside>
+      <!-- Sidebar End -->
+
+      <main
+        id="main-content"
+        class="flex flex-col relative w-[calc(100%-72px)] lg:w-[calc(100%-240px)]"
+      >
+        <!-- Navbar start -->
+        <nav
+          class="h-[83px] w-full flex items-center bg-white px-2 md:px-5 lg:justify-between"
+        >
+          <div class="hidden lg:block">
+            <button id="sidebarFoldButton">
+              <img
+                src="../../assets/icons/menu-fold-line.svg"
+                alt="toggle sidebar state icon"
+                class="w-[20px] h-5"
+              />
+            </button>
+            <button class="hidden" id="sidebarUnfoldButton">
+              <img
+                src="../../assets/icons/menu-unfold-line.svg"
+                alt="toggle sidebar state icon"
+                class="w-[20px] h-[20px]"
+              />
+            </button>
+          </div>
+
+          <div class="flex items-center gap-3 lg:gap-5">
+            <div class="flex items-center mr-3 lg:mr-5">
+              <input
+                type="text"
+                placeholder="Search for results..."
+                class="h-10 rounded-[29px] w-[150px] md:w-[259px] rounded-tr-none rounded-br-none outline-none border-none pl-5 font-SogoeUI text-sm"
+              />
+              <button
+                class="bg-blue rounded-[29px] rounded-bl-none rounded-tl-none h-10 w-[46px] flex items-center justify-center"
+              >
+                <img src="../../assets/icons/search.svg" />
+              </button>
+            </div>
+            <div
+              style="background-image: url(../../assets/img/flags/GB.svg)"
+              class="hidden lg:block w-[26px] h-[26px] rounded-full border bg-center bg-cover"
+            ></div>
+            <div class="hidden lg:flex relative w-[30px] h-[30px] items-center">
+              <img src="../../assets/icons/bell.svg" alt="bell icon" />
+              <p
+                class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
+              >
+                <span class="relative top-[1px] w-min">18</span>
+              </p>
+            </div>
+            <div class="hidden lg:flex items-center gap-[14px] mr-3">
+              <div
+                style="background-image: url(../../assets/img/users/marvel.svg)"
+                class="w-[35px] h-[35px] rounded-full bg-center bg-cover"
+              ></div>
+              <div class="items-start gap-1 hidden lg:flex">
+                <div class="flex flex-col gap-1">
+                  <p class="poppins-medium text-sm">Marvel Major</p>
+                  <span class="text-[9px] poppins-regular">Super Admin</span>
+                </div>
+
+                <i class="ri-arrow-down-s-line text-grey1"></i>
+              </div>
+            </div>
+          </div>
+          <div id="dropdown-menu-button" class="lg:hidden ml-auto">
+            <button class="w-6 h-6">
+              <img src="../../assets/icons/menu-line.svg" alt="" />
+            </button>
+          </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- User Dropdown -->
+        <div
+          id="user-dropdown"
+          class="hidden lg:hidden w-[200px] absolute top-[65px] shadow right-0 bg-white p-2 space-y-4 rounded-md"
+        >
+          <div class="items-center gap-[14px] mr-3 flex">
+            <div
+              style="background-image: url(../../assets/img/users/marvel.svg)"
+              class="w-[35px] h-[35px] rounded-full bg-center bg-cover"
+            ></div>
+            <div class="items-start gap-1 flex">
+              <div class="flex flex-col gap-1">
+                <p class="poppins-medium text-sm">Marvel Major</p>
+                <span class="text-[9px] poppins-regular">Super Admin</span>
+              </div>
+
+              <i class="ri-arrow-down-s-line text-grey1"></i>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div
+              style="background-image: url(../../assets/img/flags/GB.svg)"
+              class="w-[26px] h-[26px] rounded-full border bg-center bg-cover"
+            ></div>
+            <div class="flex relative w-[30px] h-[30px] items-center">
+              <img src="../../assets/icons/bell.svg" alt="bell icon" />
+              <p
+                class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
+              >
+                <span class="relative top-[1px] w-min">18</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- User dropdown End -->
+
+        <!-- Tabs Start -->
+        <div
+          class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto bg-inputBg"
+        >
+          <a
+            href="/html/settings/company.html"
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Company Settings</span>
+          </a>
+          <a
+            href="/html/settings/business-address.html"
+            class="tab active-tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Business Address</span>
+          </a>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">App Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Profile Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Notification Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Currency Settings</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Payment Credentials</span>
+          </div>
+          <div
+            class="tab flex w-full items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap"
+              >More <i class="ri-arrow-down-s-line text-grey1"></i
+            ></span>
+          </div>
+        </div>
+        <!-- Tabs End -->
+
+        <!-- Page Detail Start -->
+        <div
+          class="flex flex-col space-y-5 lg:flex-row justify-between px-2 lg:px-5 mt-5"
+        >
+          <div>
+            <p class="font-SogoeUISemibold text-[24px] text-black">Settings</p>
+            <span class="font-SogoeUI text-sm text-grey3"
+              >Home / Company Settings</span
+            >
+          </div>
+          <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
+            <button
+              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
+            >
+              <img
+                src="../../assets/icons/upload.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="lg:text-sm text-xs rounded-[4px]">Import</span>
+            </button>
+            <button
+              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
+            >
+              <img
+                src="../../assets/icons/filter.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="lg:text-sm text-xs rounded-[4px]">Filter</span>
+            </button>
+            <button
+              class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
+            >
+              <img
+                src="../../assets/icons/download.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+              />
+              <span class="text-xs lg:text-sm text-nowrap"
+                >Download Report</span
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Page Detail End -->
+
+        <!-- Company Settings Start -->
+        <div class="bg-white rounded-[20px] pt-5 mt-5 pb-6 mx-5">
+          <div
+            class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between"
+          >
+            <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+              Business Address
+            </h2>
+          </div>
+        </div>
+        <!-- Company Settings End -->
+      </main>
+    </div>
+
+    <script>
+      const body = document.querySelector("body");
+      const sidebar = document.querySelector("#sidebar");
+      const sidebarFoldButton = document.querySelector("#sidebarFoldButton");
+      const sidebarUnfoldButton = document.querySelector(
+        "#sidebarUnfoldButton"
+      );
+      const foldIcon = document.querySelector("#foldIcon");
+      const unfoldIcon = document.querySelector("#unfoldIcon");
+      const brandName = document.querySelector("#brandName");
+      const dashboardItemNAme = document.querySelectorAll(".dashboardItemName");
+      const mainContent = document.querySelector("#main-content");
+
+      const dropdownMenuButton = document.querySelector(
+        "#dropdown-menu-button"
+      );
+
+      const sidebarItems = document.querySelectorAll(".sidebar-item");
+
+      const tabItems = document.querySelectorAll(".tab");
+
+      tabItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const activeTab = document.querySelector(".tab.active-tab");
+
+          if (activeTab) {
+            activeTab.classList.remove("active-tab");
+          }
+          item.classList.add("active-tab");
+        });
+      });
+
+      sidebarItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const activeSidebarItem = document.querySelector(
+            ".sidebar-item.active-sidebar-item"
+          );
+
+          if (activeSidebarItem) {
+            activeSidebarItem.classList.remove("active-sidebar-item");
+          }
+
+          item.classList.add("active-sidebar-item");
+        });
+      });
+
+      const userDropdown = document.querySelector("#user-dropdown");
+
+      body.addEventListener("click", (event) => {
+        let userDropdown = document.getElementById("user-dropdown");
+        var target = event.target;
+
+        if (
+          target === dropdownMenuButton ||
+          dropdownMenuButton.contains(target)
+        ) {
+          userDropdown.classList.toggle("hidden");
+        } else {
+          if (target !== userDropdown && !userDropdown.contains(target)) {
+            userDropdown.classList.add("hidden");
+          }
+        }
+      });
+
+      sidebarFoldButton.addEventListener("click", () => {
+        foldSidebar();
+      });
+
+      sidebarUnfoldButton.addEventListener("click", () => {
+        unfoldSidebar();
+      });
+
+      const foldSidebar = () => {
+        sidebar.classList.remove("lg:w-[240px]");
+        sidebar.classList.add("lg:w-[72px]");
+        mainContent.classList.remove("lg:w-[calc(100%-240px)]");
+        mainContent.classList.remove("lg:w-[calc(100%-72px)]");
+        sidebarFoldButton.classList.add("hidden");
+        sidebarUnfoldButton.classList.remove("hidden");
+        sidebarUnfoldButton.classList.add("block");
+        brandName.classList.add("lg:hidden");
+
+        dashboardItemNAme.forEach((name) => {
+          name.classList.add("lg:hidden");
+        });
+      };
+
+      const unfoldSidebar = () => {
+        sidebar.classList.remove("lg:w-[72px]");
+        sidebar.classList.add("lg:w-[240px]");
+        mainContent.classList.remove("lg:w-[calc(100%-72px)]");
+        mainContent.classList.remove("lg:w-[calc(100%-240px)]");
+        sidebarUnfoldButton.classList.add("hidden");
+        sidebarFoldButton.classList.remove("hidden");
+        sidebarFoldButton.classList.add("block");
+        brandName.classList.remove("lg:hidden");
+
+        dashboardItemNAme.forEach((name) => {
+          name.classList.remove("lg:hidden");
+        });
+      };
+    </script>
+  </body>
+</html>

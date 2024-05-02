@@ -1022,10 +1022,6 @@ video {
   width: min-content;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -1121,10 +1117,6 @@ video {
 
 .gap-\[7px\] {
   gap: 7px;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-x-2 {
@@ -1370,30 +1362,6 @@ video {
 
 .bg-\[url\(\'\.\.\/assets\/img\/users\/marvel\.svg\'\)\] {
   background-image: url('../assets/img/users/marvel.svg');
-}
-
-.bg-\[url\(\'\.\.\.\/\.\.\/assets\/img\/flags\/GB\.svg\'\)\] {
-  background-image: url('.../../assets/img/flags/GB.svg');
-}
-
-.bg-\[url\(\'\.\.\.\/\.\.\/assets\/img\/users\/marvel\.svg\'\)\] {
-  background-image: url('.../../assets/img/users/marvel.svg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/img\/flags\/GB\.svg\'\)\] {
-  background-image: url('../../assets/img/flags/GB.svg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/assets\/img\/users\/marvel\.svg\'\)\] {
-  background-image: url('../../assets/img/users/marvel.svg');
-}
-
-.bg-\[url\(\'\/assets\/img\/flags\/GB\.svg\'\)\] {
-  background-image: url('/assets/img/flags/GB.svg');
-}
-
-.bg-\[url\(\'assets\/img\/flags\/GB\.svg\'\)\] {
-  background-image: url('assets/img/flags/GB.svg');
 }
 
 .bg-cover {
