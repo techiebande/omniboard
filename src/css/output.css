@@ -684,12 +684,12 @@ video {
   top: 0px;
 }
 
-.top-1 {
-  top: 0.25rem;
-}
-
 .top-\[1px\] {
   top: 1px;
+}
+
+.top-\[2px\] {
+  top: 2px;
 }
 
 .top-\[3px\] {
@@ -698,10 +698,6 @@ video {
 
 .top-\[65px\] {
   top: 65px;
-}
-
-.top-\[2px\] {
-  top: 2px;
 }
 
 .z-0 {
@@ -718,6 +714,11 @@ video {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-5 {
@@ -1781,6 +1782,11 @@ input[type="radio"]:checked + div {
 
   .lg\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .lg\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .lg\:-ml-\[50px\] {
