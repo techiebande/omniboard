@@ -297,49 +297,49 @@
         >
           <a
             href="/html/settings/company.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">Company Settings</span>
           </a>
           <a
             href="/html/settings/business-address.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">Business Address</span>
           </a>
           <a
             href="/html/settings/app.html"
-            class="tab active-tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">App Settings</span>
           </a>
           <a
             href="/html/settings/profile.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">Profile Settings</span>
           </a>
           <a
             href="/html/settings/notifications.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">Notification Settings</span>
           </a>
           <a
             href="/html/settings/currency.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">Currency Settings</span>
           </a>
           <a
             href="/html/settings/payment-credentials.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">Payment Credentials</span>
           </a>
           <a
             href="/html/settings/more.html"
-            class="tab flex items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap"
               >More <i class="ri-arrow-down-s-line text-grey1"></i
@@ -355,7 +355,7 @@
           <div>
             <p class="font-SogoeUISemibold text-[24px] text-black">Settings</p>
             <span class="font-SogoeUI text-sm text-grey3"
-              >Home / Company Settings</span
+              >Home / App Settings</span
             >
           </div>
           <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
@@ -395,98 +395,191 @@
         </div>
         <!-- Page Detail End -->
 
-        <!-- Business Adress Settings Start -->
-        <div class="bg-white rounded-[20px] pt-5 mt-5 pb-6 mx-2 lg:mx-5">
+        <!-- App Settings Start -->
+        <div class="bg-white rounded-[20px] mt-5 mx-2 lg:mx-5 pb-5">
           <div
-            class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between"
+            class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto border-b z-[55] rounded-tl-[20px] rounded-tr-[20px]"
           >
-            <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
-              Business Address
-            </h2>
+            <a
+              href="/html/settings/app.html"
+              class="tab flex text-grey3 items-center active-tab justify-center py-[14px] px-5 border border-grey2"
+            >
+              <span class="text-nowrap">App Settings</span>
+            </a>
+            <a
+              href="/html/settings/client-signup-settings.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
+            >
+              <span class="text-nowrap">Client Sign Up Settings</span>
+            </a>
           </div>
-          <div class="overflow-x-auto">
-            <table class="w-full max-w-full">
-              <thead class="text-xs md:text-sm font-SogoeUISemibold text-left">
-                <tr class="">
-                  <th class="px-5 pr-2 py-[14px]">
-                    <input class="relative top-[2px]" type="checkbox" />
-                  </th>
-                  <th class="px-5 pl-0 py-[14px]">ID</th>
-                  <th class="px-5 py-[14px]">LOCATION</th>
-                  <th class="px-5 py-[14px]">ADDRESS</th>
-                  <th class="px-5 py-[14px]">COUNTRY</th>
-                  <th class="px-5 py-[14px]">TAX NAME</th>
-                  <th class="px-5 py-[14px]">DEFAULT</th>
-                  <th class="px-5 py-[14px] w-[20px]">ACTION</th>
-                </tr>
-              </thead>
-              <tbody class="text-xs md:text-sm font-SogoeUI text-left">
-                <tr class="users-row">
-                  <td class="px-5 pr-2 py-[14px]">
-                    <input type="checkbox" class="relative top-[2px]" />
-                  </td>
-                  <td class="px-5 pl-0 py-[14px]">20</td>
-                  <td class="px-5 py-[14px] text-nowrap">Omniboard</td>
-                  <td class="px-5 py-[14px]">Your Company address here</td>
-                  <td class="px-5 py-[14px]">Portugal</td>
-                  <td class="px-5 py-[14px]">Name here</td>
-                  <td class="px-5 py-[14px] text-nowrap">
-                    <label class="flex items-center gap-[6px]">
-                      <input type="radio" name="" class="hidden" />
-                      <div
-                        class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                      ></div>
-                      Default
-                    </label>
-                  </td>
-                  <td class="px-5 py-[14px]">
-                    <div
-                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
-                    >
-                      <img
-                        src="../../assets/icons/edit.svg"
-                        class="w-[13px] h-[13px]"
-                        alt=""
-                      />
-                    </div>
-                  </td>
-                </tr>
 
-                <tr class="users-row">
-                  <td class="px-5 pr-2 py-[14px]">
-                    <input type="checkbox" class="relative top-[2px]" />
-                  </td>
-                  <td class="px-5 pl-0 py-[14px]">20</td>
-                  <td class="px-5 py-[14px] text-nowrap">Omniboard</td>
-                  <td class="px-5 py-[14px]">Your Company address here</td>
-                  <td class="px-5 py-[14px]">Portugal</td>
-                  <td class="px-5 py-[14px]">Name here</td>
-                  <td class="px-5 py-[14px] text-nowrap">
-                    <label class="flex items-center gap-[6px]">
-                      <input type="radio" name="" class="hidden" />
-                      <div
-                        class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                      ></div>
-                      Default
-                    </label>
-                  </td>
-                  <td class="px-5 py-[14px]">
-                    <div
-                      class="rounded-[4px] w-[26px] h-[26px] flex items-center justify-center bg-blue cursor-pointer"
-                    >
-                      <img
-                        src="../../assets/icons/edit.svg"
-                        class="w-[13px] h-[13px]"
-                        alt=""
-                      />
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <form class="mx-2 lg:mx-5">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-5 gap-5"
+            >
+              <div class="w-full">
+                <label class="font-SogoeUI text-sm text-darkBlue" for=""
+                  >Date format</label
+                >
+                <div
+                  class="select-container mt-[10px] flex justify-center border rounded-[4px] border-grey3 relative h-[38px]"
+                >
+                  <select
+                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
+                  >
+                    <option value="">d-m Y (08-04-2024)</option>
+                    <option value="d-m Y (08-04-2024)">
+                      d-m Y (08-04-2024)
+                    </option>
+                  </select>
+                  <div
+                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
+                  >
+                    <i class="ri-arrow-down-s-line text-grey1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <label class="font-SogoeUI text-sm text-darkBlue" for=""
+                  >Time format</label
+                >
+                <div
+                  class="w-full select-container mt-[10px] flex justify-center border rounded-[4px] border-grey3 relative h-[38px]"
+                >
+                  <select
+                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
+                  >
+                    <option value="">12 Hour(s) (05:04 pm)</option>
+                    <option value="12 Hour(s) (05:04 pm)">
+                      12 Hour(s) (05:04 pm)
+                    </option>
+                  </select>
+                  <div
+                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
+                  >
+                    <i class="ri-arrow-down-s-line text-grey1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <label class="font-SogoeUI text-sm text-darkBlue" for=""
+                  >Default Timezone</label
+                >
+                <div
+                  class="w-full select-container mt-[10px] flex justify-center border rounded-[4px] border-grey3 relative h-[38px]"
+                >
+                  <select
+                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
+                  >
+                    <option value="">Asia/Kolkata</option>
+                    <option value="Asia/Kolkata">Asia/Kolkata</option>
+                  </select>
+                  <div
+                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
+                  >
+                    <i class="ri-arrow-down-s-line text-grey1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <label class="font-SogoeUI text-sm text-darkBlue" for=""
+                  >Default Currency</label
+                >
+                <div
+                  class="w-full select-container mt-[10px] flex justify-center border rounded-[4px] border-grey3 relative h-[38px]"
+                >
+                  <select
+                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
+                  >
+                    <option value="">$ (USD)</option>
+                    <option value="$ (USD)">$ (USD)</option>
+                  </select>
+                  <div
+                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
+                  >
+                    <i class="ri-arrow-down-s-line text-grey1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <label class="font-SogoeUI text-sm text-darkBlue" for=""
+                  >Language</label
+                >
+                <div
+                  class="w-full select-container mt-[10px] flex justify-center border rounded-[4px] border-grey3 relative h-[38px]"
+                >
+                  <select
+                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
+                  >
+                    <option value="">English</option>
+                    <option value="English">English</option>
+                  </select>
+                  <div
+                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
+                  >
+                    <i class="ri-arrow-down-s-line text-grey1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <label class="font-SogoeUI text-sm text-darkBlue" for=""
+                  >Datatable Row Limi</label
+                >
+                <div
+                  class="w-full select-container mt-[10px] flex justify-center border rounded-[4px] border-grey3 relative h-[38px]"
+                >
+                  <select
+                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
+                  >
+                    <option value="">10</option>
+                    <option value="10">10</option>
+                  </select>
+                  <div
+                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
+                  >
+                    <i class="ri-arrow-down-s-line text-grey1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full flex items-end">
+                <label
+                  class="font-SogoeUI text-sm text-darkBlue flex items-center gap-[10px] relative bottom-0 -left-2 md:left-0 md:bottom-[10px]"
+                  for="employee-export-data"
+                >
+                  <input
+                    id="employee-export-data"
+                    type="checkbox"
+                    class="appearance-none"
+                  />
+                  <div
+                    class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center"
+                  >
+                    <i class="ri-check-line hidden text-white"></i>
+                  </div>
+                  Employee can export data</label
+                >
+              </div>
+            </div>
+            <button
+              class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[40px]"
+            >
+              <img
+                src="../../assets/icons/Icon feather-check.svg"
+                class="w-[17px] h-[11px]"
+              />
+              Save
+            </button>
+          </form>
         </div>
-        <!-- Business Adress Settings End -->
+
+        <!-- App Settings End -->
       </main>
     </div>
 

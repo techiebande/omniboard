@@ -396,180 +396,85 @@
         <!-- Page Detail End -->
 
         <form class="rounded-[20px] mx-2 lg:mx-5 bg-white mt-5 border-b pb-5">
-          <div class="flex flex-col xl:flex-row">
-            <div class="w-full xl:w-[75%] xl:border-r">
+          <div
+            class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto border-b z-[55] rounded-tl-[20px] rounded-tr-[20px]"
+          >
+            <a
+              href="/html/settings/notifications.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
+            >
+              <span class="text-nowrap">Email</span>
+            </a>
+            <a
+              href="/html/settings/slack.html"
+              class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 text-grey3"
+            >
+              <span class="text-nowrap">Slack</span>
+            </a>
+            <a
+              href="/html/settings/push-notifications.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 text-grey3"
+            >
+              <span class="text-nowrap">Push Notifications</span>
+            </a>
+          </div>
+
+          <div class="px-2 lg:px-5 pt-5 space-y-5">
+            <label
+              class="font-SogoeUI text-sm text-darkBlue flex items-center"
+              for="select-all"
+            >
+              <input id="select-all" type="checkbox" class="appearance-none" />
               <div
-                class="flex items-start text-[14px] border-b font-SogoeUISemibold overflow-x-auto z-[55] rounded-tl-[20px]"
+                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
               >
-                <a
-                  href="/html/settings/profile.html"
-                  class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-b-0 border-grey2"
-                >
-                  <span class="text-nowrap">Email</span>
-                </a>
-                <a
-                  href="/html/settings/slack.html"
-                  class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-b-0 border-l-0 border-grey2 text-grey3"
-                >
-                  <span class="text-nowrap">Slack</span>
-                </a>
-                <a
-                  href="/html/settings/push-notifications.html"
-                  class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-b-0 border-l-0 border-grey2 text-grey3"
-                >
-                  <span class="text-nowrap">Push Notifications</span>
-                </a>
+                <i class="ri-check-line hidden text-white"></i>
               </div>
+              Select All</label
+            >
 
-              <div class="mt-5 px-2 lg:px-5">
-                <div
-                  class="bg-red2 flex items-center gap-[10px] py-5 px-[10px] rounded"
-                >
-                  <img src="../../assets/icons/information-2-fill.svg" alt="" />
-                  <p class="font-SogoeUI text-red text-sm">
-                    Your SMTP details are not correct. Please update to the
-                    correct one
-                  </p>
-                </div>
+            <div class="space-y-[10px] flex flex-col">
+              <label class="text-sm" for=""
+                >Slack Webhook <span class="text-red">*</span></label
+              >
+              <input
+                class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                type="email"
+                name=""
+                placeholder="e.g https://hook.slack.com/services/xxxxxxxxxxxx"
+              />
+            </div>
 
-                <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div class="space-y-[10px] flex flex-col">
-                    <label class="text-sm" for=""
-                      >Mail From Name <span class="text-red">*</span></label
-                    >
-                    <input
-                      class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                      type="text"
-                      name=""
-                      placeholder="omniboard"
-                    />
-                  </div>
-
-                  <div class="space-y-[10px] flex flex-col">
-                    <label class="text-sm" for=""
-                      >Mail From Email <span class="text-red">*</span></label
-                    >
-                    <input
-                      class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                      type="email"
-                      name=""
-                      placeholder="from@email.com"
-                    />
-                  </div>
-
-                  <div class="space-y-[10px] flex flex-col">
-                    <label class="text-sm" for=""
-                      >Enable Email Queue <span class="text-red">*</span></label
-                    >
-                    <input
-                      class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                      type="email"
-                      name=""
-                      placeholder="No"
-                    />
-                  </div>
-
-                  <div class="space-y-[10px] flex flex-col mt-[7px]">
-                    <label class="text-sm" for="">Mail Driver</label>
-                    <div class="flex items-center gap-5">
-                      <label class="flex items-center gap-[6px]">
-                        <input
-                          type="radio"
-                          name="canUserLogin"
-                          class="hidden"
-                        />
-                        <div
-                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                        ></div>
-                        Yes
-                      </label>
-
-                      <label class="flex items-center gap-[6px]">
-                        <input
-                          type="radio"
-                          name="canUserLogin"
-                          class="hidden"
-                        />
-                        <div
-                          class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                        ></div>
-                        No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="w-full mt-5">
-                  <div class="space-y-[10px] flex flex-col">
-                    <label class="text-sm" for=""
-                      >Mail Host <span class="text-red">*</span></label
-                    >
-                    <input
-                      class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                      type="email"
-                      name=""
-                      placeholder="smpt.gmail.com"
-                    />
-                  </div>
-                </div>
-
-                <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div class="space-y-[10px] flex flex-col">
-                    <label class="text-sm" for=""
-                      >Mail Port <span class="text-red">*</span></label
-                    >
-                    <input
-                      class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                      type="text"
-                      name=""
-                      placeholder="465"
-                    />
-                  </div>
-
-                  <div class="space-y-[10px] flex flex-col">
-                    <label class="text-sm" for=""
-                      >Mail encryption <span class="text-red">*</span></label
-                    >
-                    <select
-                      class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                    >
-                      <option value="ssl">ssl</option>
-                    </select>
-                  </div>
-                </div>
+            <div class="font-SogoeUI mt-5 text-sm">
+              <p class="text-darkBlue">Notification Logo</p>
+              <div
+                class="flex items-center justify-center border h-[105px] border-dashed rounded-[10px] border-grey7 mt-[10px]"
+              >
+                <label for="upload_photo"
+                  >Upload a photo
+                  <input class="hidden" id="upload_photo" type="file"
+                /></label>
               </div>
             </div>
-            <div class="w-full xl:w-[25%]">
-              <div
-                class="flex xl:border-b relative top-[2px] items-start text-[14px] font-SogoeUISemibold overflow-x-auto z-[55] rounded-tl-[20px]"
-              >
-                <p
-                  href="/html/settings/profile.html"
-                  class="flex text-grey3 items-center justify-center py-[14px] px-5"
-                >
-                  <span class="font-SogoeUIBold text-darkBlue text-nowrap"
-                    >EMAIL NOTIFICATION SETTINGS</span
-                  >
-                </p>
-              </div>
-              <div class="mt-5 px-5 space-y-[15px]">
-                <label
-                  class="font-SogoeUI text-sm text-darkBlue flex items-center"
-                  for="select-all"
-                >
-                  <input
-                    id="select-all"
-                    type="checkbox"
-                    class="appearance-none"
-                  />
-                  <div
-                    class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-                  >
-                    <i class="ri-check-line hidden text-white"></i>
-                  </div>
-                  Select All</label
-                >
 
+            <div>
+              <label
+                class="font-SogoeUI text-sm text-darkBlue flex items-center"
+                for="select-all2"
+              >
+                <input
+                  id="select-all2"
+                  type="checkbox"
+                  class="appearance-none"
+                />
+                <div
+                  class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
+                >
+                  <i class="ri-check-line hidden text-white"></i>
+                </div>
+                Select All</label
+              >
+              <div class="flex flex-wrap gap-5 mt-5">
                 <label
                   class="font-SogoeUI text-sm text-darkBlue flex items-center"
                   for="admin-exp"
@@ -1009,10 +914,10 @@
             </button>
 
             <button
-              class="bg-white w-[181px] flex items-center justify-center gap-[10px] border border-blue text-blue font-SogoeUI rounded-[5px] h-[38px] mt-[15px] text-nowrap"
+              class="bg-white w-[200px] flex items-center justify-center gap-[10px] border border-blue text-blue font-SogoeUI rounded-[5px] h-[38px] mt-[15px] text-nowrap"
             >
               <img src="../../assets/icons/mail-icon.svg" class="w-5 h-5" />
-              Sent Test Email
+              Sent Test Notification
             </button>
           </div>
         </form>

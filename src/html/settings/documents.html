@@ -402,7 +402,7 @@
           >
             <a
               href="/html/settings/profile.html"
-              class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
             >
               <span class="text-nowrap">Profile</span>
             </a>
@@ -414,334 +414,106 @@
             </a>
             <a
               href="/html/settings/documents.html"
-              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 text-grey3"
+              class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 text-grey3"
             >
               <span class="text-nowrap">Documents</span>
             </a>
           </div>
 
           <div class="px-2 lg:px-5">
-            <div class="font-SogoeUI mt-5 text-sm">
-              <p class="text-darkBlue">Profile Picture</p>
-              <div
-                class="flex items-center justify-center border h-[105px] border-dashed rounded-[10px] border-grey7 mt-[10px]"
+            <div class="flex justify-center flex-col items-center">
+              <i class="ri-file-fill"></i>
+              <p class="text-sm font-SogoeUI text-grey3 mt-[10px]">
+                - No file uploaded.
+              </p>
+              <button
+                id="addFileModalButton"
+                class="text-blue border border-blue text-sm font-SogoeUI rounded p-[10px] mt-5"
               >
-                <label for="upload_photo"
-                  >Upload a photo
-                  <input class="hidden" id="upload_photo" type="file"
-                /></label>
-              </div>
+                <i class="ri-add-line"></i>
+                Add files
+              </button>
             </div>
-
-            <div
-              class="w-full lg:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5"
-            >
-              <div class="space-y-[10px] flex flex-col w-full">
-                <label class="text-sm" for="">Your Name</label>
-                <div class="flex">
-                  <div
-                    class="select-container mt-[10px] flex justify-center border min-w-[57px] w-[57px] border-collapse rounded-tl-[4px] rounded-bl-[4px] border-grey3 relative h-[38px] bottom-[10px] z-50"
-                  >
-                    <select
-                      class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
-                    >
-                      <option value="">Mr</option>
-                      <option value="Mr">Mr</option>
-                      <option value="Mrs">Mrs</option>
-                      <option value="Miss">Miss</option>
-                    </select>
-                    <div
-                      class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
-                    >
-                      <i class="ri-arrow-down-s-line text-grey1"></i>
-                    </div>
-                  </div>
-                  <input
-                    class="border w-full border-grey3 rounded-tr-[4px] rounded-br-[4px] h-[38px] border-l-0 outline-none pl-4 text-black2"
-                    type="email"
-                    name=""
-                    placeholder="admin@example.com"
-                  />
-                </div>
-              </div>
-
-              <div class="space-y-[10px] flex flex-col w-full">
-                <label class="text-sm" for="">Your Email</label>
-                <input
-                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
-                  type="email"
-                  name=""
-                  placeholder="admin@example.com"
-                />
-              </div>
-
-              <div class="space-y-[10px] flex flex-col w-full">
-                <label class="text-sm" for="">Your Password</label>
-                <div class="flex">
-                  <input
-                    class="border border-grey3 rounded-tl-[4px] rounded-bl-[4px] border-r-0 h-[38px] outline-none pl-4 text-black2 w-full"
-                    type="password"
-                    name=""
-                    placeholder="admin@example.com"
-                  />
-                  <div
-                    class="w-[48px] h-[38px] flex items-center justify-center border border-grey3"
-                  >
-                    <i class="ri-eye-fill"></i>
-                  </div>
-
-                  <div
-                    class="w-[48px] h-[38px] flex items-center justify-center border border-grey3 rounded-tr-[4px] rounded-br-[4px] border-l-0"
-                  >
-                    <i class="ri-recycle-line"></i>
-                  </div>
-                </div>
-                <p class="text-sm font-SogoeUI text-grey1">
-                  Leave blank to keep the current password.
-                </p>
-              </div>
-
-              <div class="space-y-[10px] flex flex-col w-full">
-                <label class="text-sm" for=""
-                  >Receive email notifications?</label
-                >
-                <div class="flex items-center gap-5">
-                  <label class="flex items-center gap-[6px]">
-                    <input type="radio" name="canUserLogin" class="hidden" />
-                    <div
-                      class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                    ></div>
-                    Enable
-                  </label>
-
-                  <label class="flex items-center gap-[6px]">
-                    <input type="radio" name="canUserLogin" class="hidden" />
-                    <div
-                      class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                    ></div>
-                    Disable
-                  </label>
-                </div>
-              </div>
-
-              <div class="space-y-[10px] flex flex-col w-full">
-                <label class="text-sm" for=""
-                  >Enable RTL Theme (Right to Left)</label
-                >
-                <div class="flex items-center gap-5">
-                  <label class="flex items-center gap-[6px]">
-                    <input type="radio" name="canUserLogin" class="hidden" />
-                    <div
-                      class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                    ></div>
-                    Yes
-                  </label>
-
-                  <label class="flex items-center gap-[6px]">
-                    <input type="radio" name="canUserLogin" class="hidden" />
-                    <div
-                      class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                    ></div>
-                    No
-                  </label>
-                </div>
-              </div>
-
-              <div class="space-y-[10px] flex flex-col w-full">
-                <label class="text-sm" for="">Enable Google Calender</label>
-                <div class="flex items-center gap-5">
-                  <label class="flex items-center gap-[6px]">
-                    <input type="radio" name="canUserLogin" class="hidden" />
-                    <div
-                      class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                    ></div>
-                    Yes
-                  </label>
-
-                  <label class="flex items-center gap-[6px]">
-                    <input type="radio" name="canUserLogin" class="hidden" />
-                    <div
-                      class="border border-grey3 w-[14px] h-[14px] rounded-full"
-                    ></div>
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10"
-            >
-              <div class="w-full">
-                <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                  >Country</label
-                >
-                <div
-                  class="select-container flex justify-center border rounded-[4px] border-grey3 relative h-[38px] w-full mt-3"
-                >
-                  <select
-                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
-                  >
-                    <option value="">Portugal</option>
-                    <option value="Portugal">Portugal</option>
-                  </select>
-                  <div
-                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
-                  >
-                    <i class="ri-arrow-down-s-line text-grey1"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex flex-col w-full">
-                <label class="text-sm mt-[4px]" for="">Your Name</label>
-                <div class="flex mt-3">
-                  <div
-                    class="select-container mt-[10px] flex justify-center border min-w-[57px] w-[57px] border-collapse rounded-tl-[4px] rounded-bl-[4px] border-grey3 relative h-[38px] bottom-[10px] z-50"
-                  >
-                    <select
-                      class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
-                    >
-                      <option value="">+0</option>
-                      <option value="Mr">+234</option>
-                      <option value="Mrs">+237</option>
-                      <option value="Miss">+258</option>
-                    </select>
-                    <div
-                      class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
-                    >
-                      <i class="ri-arrow-down-s-line text-grey1"></i>
-                    </div>
-                  </div>
-                  <input
-                    class="border w-full border-grey3 rounded-tr-[4px] rounded-br-[4px] h-[38px] border-l-0 outline-none pl-4 text-black2"
-                    type="email"
-                    name=""
-                    placeholder="e.g 1234567890"
-                  />
-                </div>
-              </div>
-
-              <div class="w-full">
-                <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                  >Change Language</label
-                >
-                <div
-                  class="select-container flex justify-center border rounded-[4px] border-grey3 relative h-[38px] w-full mt-3"
-                >
-                  <select
-                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
-                  >
-                    <option value="">English</option>
-                    <option value="English">English</option>
-                  </select>
-                  <div
-                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
-                  >
-                    <i class="ri-arrow-down-s-line text-grey1"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="w-full">
-                <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                  >Gender
-                </label>
-                <div
-                  class="select-container flex justify-center border rounded-[4px] border-grey3 relative h-[38px] w-full mt-3"
-                >
-                  <select
-                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
-                  >
-                    <option value="">Male</option>
-                    <option value="English">Male</option>
-                  </select>
-                  <div
-                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
-                  >
-                    <i class="ri-arrow-down-s-line text-grey1"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="w-full">
-                <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                  >Date of birth
-                </label>
-                <input
-                  class="border w-full border-grey3 h-[38px] rounded-[4px] outline-none pl-4 text-black2 mt-3"
-                  type="text"
-                  name=""
-                  placeholder="select date"
-                />
-              </div>
-
-              <div class="w-full">
-                <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                  >Slack member ID
-                </label>
-                <div class="flex">
-                  <div
-                    class="flex items-center justify-center bg-bodyBg px-3 h-[38px] relative top-[12px] border border-grey3 rounded-tl-[4px] rounded-bl-[4px] border-r-0"
-                  >
-                    @
-                  </div>
-                  <input
-                    class="border w-full border-grey3 h-[38px] rounded-tr-[4px] rounded-br-[4px] border-l-0 outline-none pl-4 text-black2 mt-3"
-                    type="text"
-                    name=""
-                    placeholder="select date"
-                  />
-                </div>
-              </div>
-
-              <div class="w-full">
-                <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                  >Marital Status
-                </label>
-                <div
-                  class="select-container flex justify-center border rounded-[4px] border-grey3 relative h-[38px] w-full mt-3"
-                >
-                  <select
-                    class="select-box border-none appearance-none w-full outline-none pl-2 text-darkBlue"
-                  >
-                    <option value="">Single</option>
-                    <option value="English">Single</option>
-                    <option value="English">Married</option>
-                  </select>
-                  <div
-                    class="icon-container h-full w-[30px] absolute flex items-center justify-center right-0"
-                  >
-                    <i class="ri-arrow-down-s-line text-grey1"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-10">
-              <label class="font-SogoeUI text-sm text-darkBlue" for=""
-                >Address</label
-              >
-              <textarea
-                class="border border-grey3 rounded-[10px] w-full mt-3 outline-none pl-2"
-                rows="4"
-                name=""
-                id=""
-              ></textarea>
-            </div>
-
-            <button
-              class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[40px]"
-            >
-              <img
-                src="../../assets/icons/Icon feather-check.svg"
-                class="w-[17px] h-[11px]"
-              />
-              Save
-            </button>
           </div>
         </div>
 
         <!-- Client Sign Up Settings End -->
+
+        <!-- Add user modal start -->
+        <div
+          id="addFileModal"
+          class="hidden fixed top-0 left-0 w-[100vw] h-[100vh] bg-transparentBlack items-center justify-center z-[70]"
+        >
+          <div
+            id="addFileModalContent"
+            class="relative w-[95%] md:w-[40%] h-[80%] bg-white rounded-[20px] z-[70] pt-10 pb-6 overflow-y-auto flex flex-col"
+          >
+            <div
+              class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between"
+            >
+              <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+                ADD FILE
+              </h2>
+              <button id="addFileCloseButton">
+                <img
+                  src="../../assets/icons/close-line.svg"
+                  alt=""
+                  class="w-4 h-4 cursor-pointer"
+                />
+              </button>
+            </div>
+            <div class="px-3 md:px-[60px] mt-5">
+              <div class="space-y-[10px] flex flex-col">
+                <label class="text-sm" for=""
+                  >File name <span class="text-red">*</span></label
+                >
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="text"
+                  name=""
+                  placeholder="eg Bank Statement"
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col mt-5">
+                <label class="text-sm" for=""
+                  >Upload file <span class="text-red">*</span></label
+                >
+                <div
+                  class="flex items-center justify-center border border-grey3 rounded h-[96px]"
+                >
+                  <label
+                    for="upload-file"
+                    class="flex justify-center items-center gap-4 flex-col text-grey3"
+                    ><img
+                      src="../../assets/icons/upload-file.svg"
+                      class="w-5"
+                      h-5
+                      alt=""
+                    /><input
+                      id="upload-file"
+                      type="file"
+                      class="hidden"
+                    />Choose a file</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full border-t mt-auto px-3 md:px-[60px] pt-5">
+              <button
+                class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[15px]"
+              >
+                <img
+                  src="../../assets/icons/Icon feather-check.svg"
+                  class="w-[17px] h-[11px]"
+                />
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Add user modal end -->
       </main>
     </div>
 
@@ -764,18 +536,23 @@
 
       const sidebarItems = document.querySelectorAll(".sidebar-item");
 
-      //   const tabItems = document.querySelectorAll(".tab");
+      const addFileModalButton = document.querySelector("#addFileModalButton");
+      const addFileModal = document.querySelector("#addFileModal");
+      const addFileCloseButton = document.querySelector("#addFileCloseButton");
 
-      //   tabItems.forEach((item) => {
-      //     item.addEventListener("click", () => {
-      //       const activeTab = document.querySelector(".tab.active-tab");
+      const addFileModalContent = document.querySelector(
+        "#addFileModalContent"
+      );
 
-      //       if (activeTab) {
-      //         activeTab.classList.remove("active-tab");
-      //       }
-      //       item.classList.add("active-tab");
-      //     });
-      //   });
+      addFileModalButton.addEventListener("click", () => {
+        addFileModal.classList.remove("hidden");
+        addFileModal.classList.add("flex");
+      });
+
+      addFileCloseButton.addEventListener("click", () => {
+        addFileModal.classList.remove("flex");
+        addFileModal.classList.add("hidden");
+      });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {
@@ -806,6 +583,17 @@
           if (target !== userDropdown && !userDropdown.contains(target)) {
             userDropdown.classList.add("hidden");
           }
+        }
+      });
+
+      addFileModal.addEventListener("click", (event) => {
+        const target = event.target;
+        if (
+          target !== addFileModalContent &&
+          !addFileModalContent.contains(target)
+        ) {
+          addFileModal.classList.remove("flex");
+          addFileModal.classList.add("hidden");
         }
       });
 
