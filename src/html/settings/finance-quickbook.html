@@ -223,11 +223,11 @@
 
       <main
         id="main-content"
-        class="flex flex-col relative w-[calc(100%-72px)] lg:w-[calc(100%-240px)]"
+        class="flex flex-col relative w-[calc(100%-72px)] lg:w-[calc(100%-240px)] pb-5"
       >
         <!-- Navbar start -->
         <nav
-          class="h-[83px] w-full flex items-center bg-white px-2 md:px-5 lg:justify-between sticky top-0 z-[60]"
+          class="h-[83px] w-full flex items-center bg-white px-2 lg:px-5 lg:justify-between sticky top-0 z-[60]"
         >
           <div class="hidden lg:block">
             <button id="sidebarFoldButton">
@@ -251,7 +251,7 @@
               <input
                 type="text"
                 placeholder="Search for results..."
-                class="h-10 rounded-[29px] w-[150px] md:w-[259px] bg-inputBg rounded-tr-none rounded-br-none outline-none border-none pl-5 font-SogoeUI text-sm"
+                class="h-10 rounded-[29px] w-[150px] lg:w-[259px] bg-inputBg rounded-tr-none rounded-br-none outline-none border-none pl-5 font-SogoeUI text-sm"
               />
               <button
                 class="bg-blue rounded-[29px] rounded-bl-none rounded-tl-none h-10 w-[46px] flex items-center justify-center"
@@ -348,7 +348,7 @@
           </a>
           <a
             href="/html/settings/app.html"
-            class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
             <span class="text-nowrap">App Settings</span>
           </a>
@@ -376,6 +376,13 @@
           >
             <span class="text-nowrap">Payment Credentials</span>
           </a>
+
+          <a
+            href="/html/settings/payment-credentials.html"
+            class="tab flex active-tab text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
+          >
+            <span class="text-nowrap">Finance Settings</span>
+          </a>
           <a
             href="/html/settings/more.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
@@ -394,7 +401,7 @@
           <div>
             <p class="font-SogoeUISemibold text-[24px] text-black">Settings</p>
             <span class="font-SogoeUI text-sm text-grey3"
-              >Home / App Settings</span
+              >Home / Finance Settings</span
             >
           </div>
           <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
@@ -434,93 +441,158 @@
         </div>
         <!-- Page Detail End -->
 
-        <!-- Client Sign Up Settings Start -->
-        <div class="bg-white rounded-[20px] mt-5 mx-2 lg:mx-5 pb-5">
+        <div
+          class="bg-lightGreen flex items-center gap-[10px] py-4 px-[10px] rounded mx-2 lg:mx-5 mt-5"
+        >
+          <img
+            src="../../assets/icons/information-2-fill-green.svg"
+            alt=""
+            class="w-6 h-6"
+          />
+          <p class="font-SogoeUI text-darkGreen text-sm">
+            It's only one way sync. If you create an invoice or payment here
+            then an invoice or payment will be created on Quickbooks too
+          </p>
+        </div>
+
+        <form
+          class="rounded-[20px] mx-2 lg:mx-5 bg-white mt-5 border-b min-h-[450px] flex flex-col"
+        >
           <div
             class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto border-b z-[55] rounded-tl-[20px] rounded-tr-[20px]"
           >
             <a
-              href="/html/settings/app.html"
-              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
+              href="/html/settings/finance-invoice.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 gap-3"
             >
-              <span class="text-nowrap">App Settings</span>
+              <span class="text-nowrap">Invoice Settings</span>
             </a>
+
             <a
-              href="/html/settings/client-signup-settings.html"
-              class="tab flex text-grey3 items-center active-tab justify-center py-[14px] px-5 border border-grey2"
+              href="/html/settings/finance-invoice-template.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 gap-3"
             >
-              <span class="text-nowrap">Client Sign Up Settings</span>
+              <span class="text-nowrap">Invoice Template</span>
             </a>
+
+            <a
+              href="/html/settings/finance-prefix-settings.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 gap-3"
+            >
+              <span class="text-nowrap">Prefix Settings</span>
+            </a>
+
+            <a
+              href="/html/settings/finance-units.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 gap-3"
+            >
+              <span class="text-nowrap">Units</span>
+            </a>
+
+            <a
+              href="/html/settings/finance-quickbook.html"
+              class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 gap-3"
+            >
+              <span class="text-nowrap">Quickbook Settings</span>
+            </a>
+          </div>
+
+          <div class="px-2 lg:px-5 pt-5 space-y-5 w-full lg:w-[80%]">
+            <label
+              class="font-SogoeUI text-sm text-darkBlue flex items-center"
+              for="select-all"
+            >
+              <input id="select-all" type="checkbox" class="appearance-none" />
+              <div
+                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
+              >
+                <i class="ri-check-line hidden text-white"></i>
+              </div>
+              Status</label
+            >
+
+            <div class="space-y-[10px] flex flex-col">
+              <label class="text-sm" for="">Select environment </label>
+              <select
+                class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+              >
+                <option value="live">Live</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div class="space-y-[10px] flex flex-col w-full">
+                <label class="text-sm" for="">Client ID * </label>
+                <input
+                  class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  type="email"
+                  name=""
+                  placeholder=""
+                />
+              </div>
+
+              <div class="space-y-[10px] flex flex-col w-full">
+                <label class="text-sm" for="">Client Secret *</label>
+                <div class="flex">
+                  <input
+                    class="border border-grey3 rounded-tl-[4px] rounded-bl-[4px] border-r-0 h-[38px] outline-none pl-4 text-black2 w-full"
+                    type="password"
+                    name=""
+                    placeholder=""
+                  />
+                  <div
+                    class="w-[48px] h-[38px] flex items-center justify-center border border-grey3 rounded-tr-[4px] rounded-br-[4px]"
+                  >
+                    <i class="ri-eye-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 text-sm font-SogoeUI text-darkBlue">
+              <p class="">Quickbooks Redirect URL</p>
+
+              <div
+                class="flex flex-col md:flex-row gap-[10px] md:items-center mt-5"
+              >
+                <p>
+                  https://demo-saas.worksuite.biz/client-signup/c7c08eb1d5f88aea84eb861641e565e5
+                </p>
+
+                <button
+                  class="rounded-[4px] w-[96px] px-5 py-[10px] border border-grey3 flex items-center gap-[9px]"
+                >
+                  <i class="ri-file-copy-fill w-[17px] h-[19px]"></i>
+                  Copy
+                </button>
+              </div>
+              <p class="text-red mt-[10px]">
+                (Add this callback url in your quickbooks app settings.)
+              </p>
+
+              <p
+                class="border border-red2 bg-red2 rounded px-2 py-[10px] mt-5 text-red"
+              >
+                Connect Quickbooks Account. Without connecting quickbooks
+                account, sync will not work.
+              </p>
+            </div>
           </div>
 
           <div
-            class="w-full flex justify-between gap-5 mt-5 pl-2 lg:pl-5 pr-2 md:pr-20"
+            class="w-full p-5 pl-2 rounded-bl-[20px] rounded-br-[20px] flex gap-5 px-2 lg:px-5 mt-5 shadow-cardShadow items-center"
           >
-            <label
-              class="font-SogoeUI text-sm text-darkBlue flex items-center"
-              for="employee-export-data"
+            <button
+              class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px]"
             >
-              <input
-                id="employee-export-data"
-                type="checkbox"
-                class="appearance-none"
+              <img
+                src="../../assets/icons/Icon feather-check.svg"
+                class="w-[17px] h-[11px]"
               />
-              <div
-                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-              >
-                <i class="ri-check-line hidden text-white"></i>
-              </div>
-              Employee can export data</label
-            >
-
-            <label
-              class="font-SogoeUI text-sm text-darkBlue flex items-center"
-              for="appr"
-            >
-              <input id="appr" type="checkbox" class="appearance-none" />
-              <div
-                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-              >
-                <i class="ri-check-line hidden text-white"></i>
-              </div>
-              Need admin approval after client sign up</label
-            >
+              Save
+            </button>
           </div>
-
-          <div class="mt-5 px-2 lg:px-5 text-sm font-SogoeUI text-darkBlue">
-            <p class="">Client Signup URL</p>
-
-            <div
-              class="flex flex-col md:flex-row gap-[10px] md:items-center mt-5"
-            >
-              <p>
-                https://demo-saas.worksuite.biz/client-signup/c7c08eb1d5f88aea84eb861641e565e5
-              </p>
-
-              <button
-                class="rounded-[4px] w-[96px] px-5 py-[10px] border border-grey3 flex items-center gap-[9px]"
-              >
-                <i class="ri-file-copy-fill w-[17px] h-[19px]"></i>
-                Copy
-              </button>
-            </div>
-            <p class="text-red mt-[10px]">
-              (This URL will be used by the client to register on the website.)
-            </p>
-          </div>
-
-          <button
-            class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[40px] ml-2 lg:ml-5"
-          >
-            <img
-              src="../../assets/icons/Icon feather-check.svg"
-              class="w-[17px] h-[11px]"
-            />
-            Save
-          </button>
-        </div>
-
-        <!-- Client Sign Up Settings End -->
+        </form>
       </main>
     </div>
 
@@ -542,19 +614,6 @@
       );
 
       const sidebarItems = document.querySelectorAll(".sidebar-item");
-
-      //   const tabItems = document.querySelectorAll(".tab");
-
-      //   tabItems.forEach((item) => {
-      //     item.addEventListener("click", () => {
-      //       const activeTab = document.querySelector(".tab.active-tab");
-
-      //       if (activeTab) {
-      //         activeTab.classList.remove("active-tab");
-      //       }
-      //       item.classList.add("active-tab");
-      //     });
-      //   });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {

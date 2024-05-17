@@ -146,7 +146,7 @@
 
           <a
             href="/html/settings/company.html"
-            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -180,8 +180,8 @@
           </a>
 
           <a
-            href="/html/services.html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            href="/html/services/expert-advicers.html"
+            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -297,7 +297,7 @@
         <!-- User Dropdown -->
         <div
           id="user-dropdown"
-          class="hidden lg:hidden w-[200px] fixed top-[65px] shadow right-0 bg-white p-2 space-y-4 rounded-md z-[70]"
+          class="hidden lg:hidden w-[200px] fixed top-[65px] z-[70] shadow right-0 bg-white p-2 space-y-4 rounded-md"
         >
           <div class="items-center gap-[14px] mr-3 flex">
             <div
@@ -332,57 +332,37 @@
 
         <!-- Tabs Start -->
         <div
-          class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto bg-inputBg z-[55]"
+          class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto bg-inputBg sticky top-[83px] z-[55]"
         >
           <a
-            href="/html/settings/company.html"
-            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Company Settings</span>
-          </a>
-          <a
-            href="/html/settings/business-address.html"
-            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Business Address</span>
-          </a>
-          <a
-            href="/html/settings/app.html"
+            href="/html/services/expert-advicers.html"
             class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">App Settings</span>
+            <span class="text-nowrap">Expert Advisers</span>
           </a>
           <a
-            href="/html/settings/profile.html"
+            href="/html/services/virtual-private-servers.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Profile Settings</span>
+            <span class="text-nowrap">Virtual Private Servers</span>
           </a>
           <a
-            href="/html/settings/notifications.html"
+            href="/html/services/licences.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Notification Settings</span>
+            <span class="text-nowrap">Licences</span>
           </a>
           <a
-            href="/html/settings/currency.html"
+            href="/html/servicess/telegram.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Currency Settings</span>
+            <span class="text-nowrap">Telegram</span>
           </a>
           <a
-            href="/html/settings/payment-credentials.html"
+            href="/html/services/fx-signal-set.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Payment Credentials</span>
-          </a>
-          <a
-            href="/html/settings/more.html"
-            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap"
-              >More <i class="ri-arrow-down-s-line text-grey1"></i
-            ></span>
+            <span class="text-nowrap">FX Signal Set</span>
           </a>
         </div>
         <!-- Tabs End -->
@@ -392,135 +372,260 @@
           class="flex flex-col space-y-5 lg:flex-row justify-between px-2 lg:px-5 mt-5"
         >
           <div>
-            <p class="font-SogoeUISemibold text-[24px] text-black">Settings</p>
+            <p class="font-SogoeUISemibold text-[24px] text-black">Services</p>
             <span class="font-SogoeUI text-sm text-grey3"
-              >Home / App Settings</span
+              >Home / Expert Advisers / Perceptrader AI</span
             >
-          </div>
-          <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
-            <button
-              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
-            >
-              <img
-                src="../../assets/icons/upload.svg"
-                alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
-              />
-              <span class="lg:text-sm text-xs rounded-[4px]">Import</span>
-            </button>
-            <button
-              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
-            >
-              <img
-                src="../../assets/icons/filter.svg"
-                alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
-              />
-              <span class="lg:text-sm text-xs rounded-[4px]">Filter</span>
-            </button>
-            <button
-              class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
-            >
-              <img
-                src="../../assets/icons/download.svg"
-                alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
-              />
-              <span class="text-xs lg:text-sm text-nowrap"
-                >Download Report</span
-              >
-            </button>
           </div>
         </div>
         <!-- Page Detail End -->
 
-        <!-- Client Sign Up Settings Start -->
-        <div class="bg-white rounded-[20px] mt-5 mx-2 lg:mx-5 pb-5">
+        <!-- PERCEPTRADER AI Start -->
+        <div class="bg-white rounded-[20px] pt-5 mt-5 pb-6 mx-2 lg:mx-5">
           <div
-            class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto border-b z-[55] rounded-tl-[20px] rounded-tr-[20px]"
+            class="relative py-4 px-3 md:px-[32px] bg-lightBlue flex items-center justify-between"
+          >
+            <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+              PERCEPTRADER AI
+            </h2>
+          </div>
+
+          <div class="mt-5 px-3 md:px-5 lg:pr-[126px]">
+            <div class="flex flex-col xl:flex-row gap-5 w-full p-[10px]">
+              <div
+                class="w-full xl:w-[214px] xl:min-w-[214px] h-[214px] bg-[url('../../src/assets/img/hero.png')] bg-center bg-cover rounded-[10px]"
+              ></div>
+
+              <div class="flex flex-col">
+                <div
+                  class="flex flex-col text-sm font-SogoeUI text-darkBlue2 space-y-3"
+                >
+                  <p class="mt-[10px]">
+                    Evening Scalper Pro a state-of-the-art mean-reversion
+                    trading system that operates during the American trading
+                    session. It's very different from most other scalping
+                    systems, since it uses a unique trading logic on cross pairs
+                    that have a strong mean-reverting tendency with high profit
+                    targets
+                  </p>
+                  <p>
+                    Evening Scalper Pro enters the market with market orders
+                    from 19 to 23hs, it does not open trades during rollover
+                  </p>
+                  <p>
+                    This EA uses a number of advanced techniques to identify the
+                    most accurate points of entry and exit, which is why win
+                    rate is high
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col md:flex-row justify-between gap-5 w-full mt-5 xl:mt-auto items-start relative bottom-1"
+                >
+                  <div class="flex flex-col md:flex-row gap-5">
+                    <button
+                      class="text-white bg-blue text-nowrap flex items-center justify-center py-[10px] rounded px-5"
+                    >
+                      Download
+                    </button>
+                    <button
+                      class="text-white bg-blue text-nowrap flex items-center justify-center py-[10px] rounded px-5"
+                    >
+                      Activate Licence
+                    </button>
+                  </div>
+                  <div class="flex gap-5 flex-col md:flex-row">
+                    <div
+                      class="bg-grey10 px-5 py-[10px] text-sm text-darkBlue2 rounded font-SogoeUI text-nowrap"
+                    >
+                      Current Subscription:
+                      <span class="text-darkBlue2 font-SogoeUIBold"
+                        >Bronze</span
+                      >
+                    </div>
+                    <button
+                      class="text-white bg-blue text-nowrap flex items-center justify-center py-[10px] rounded px-5"
+                    >
+                      Upgrade
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto w-full border sticky top-[83px] z-[55]"
           >
             <a
-              href="/html/settings/app.html"
+              href="/html/services/perceptrader-ai-demo-acct.html"
               class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
             >
-              <span class="text-nowrap">App Settings</span>
+              <span class="text-nowrap">Demo</span>
             </a>
             <a
-              href="/html/settings/client-signup-settings.html"
-              class="tab flex text-grey3 items-center active-tab justify-center py-[14px] px-5 border border-grey2"
+              href="/html/services/perceptrader-ai-live-acct.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
             >
-              <span class="text-nowrap">Client Sign Up Settings</span>
+              <span class="text-nowrap">Live Account</span>
+            </a>
+            <a
+              href="/html/services/perceptrader-ai-tutorial.html"
+              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
+            >
+              <span class="text-nowrap">Tutorial</span>
+            </a>
+            <a
+              href="/html/services/perceptrader-ai-licence-subscriptions.html"
+              class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
+            >
+              <span class="text-nowrap">License Subscriptions</span>
             </a>
           </div>
 
           <div
-            class="w-full flex justify-between gap-5 mt-5 pl-2 lg:pl-5 pr-2 md:pr-20"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-2 lg:px-10 my-10 gap-10"
           >
-            <label
-              class="font-SogoeUI text-sm text-darkBlue flex items-center"
-              for="employee-export-data"
-            >
-              <input
-                id="employee-export-data"
-                type="checkbox"
-                class="appearance-none"
-              />
-              <div
-                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-              >
-                <i class="ri-check-line hidden text-white"></i>
-              </div>
-              Employee can export data</label
-            >
-
-            <label
-              class="font-SogoeUI text-sm text-darkBlue flex items-center"
-              for="appr"
-            >
-              <input id="appr" type="checkbox" class="appearance-none" />
-              <div
-                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-              >
-                <i class="ri-check-line hidden text-white"></i>
-              </div>
-              Need admin approval after client sign up</label
-            >
-          </div>
-
-          <div class="mt-5 px-2 lg:px-5 text-sm font-SogoeUI text-darkBlue">
-            <p class="">Client Signup URL</p>
-
             <div
-              class="flex flex-col md:flex-row gap-[10px] md:items-center mt-5"
+              class="w-full space-y-5 flex flex-col items-center shadow-cardShadow text-center rounded-[10px] p-5 border border-orange"
             >
-              <p>
-                https://demo-saas.worksuite.biz/client-signup/c7c08eb1d5f88aea84eb861641e565e5
-              </p>
+              <p class="font-SogoeUIBold text-[20px]">Freemium</p>
+              <div class="flex items-center gap-1">
+                <div
+                  class="bg-[rgba(237,111,0,0.05)] w-7 h-7 min-w-7 rounded-full flex items-center justify-center"
+                >
+                  <img
+                    src="../../assets/icons/check-line-orange.svg"
+                    class="w-[16px] h-[16px]"
+                    alt=""
+                  />
+                </div>
 
+                <p class="font-SogoeUI text-xs">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+              </div>
+
+              <p class="font-SogoeUIBold text-[20px]">$0</p>
               <button
-                class="rounded-[4px] w-[96px] px-5 py-[10px] border border-grey3 flex items-center gap-[9px]"
+                class="bg-grey10 flex items-center justify-center rounded py-[10px] w-full text-sm"
               >
-                <i class="ri-file-copy-fill w-[17px] h-[19px]"></i>
-                Copy
+                Current Subscription
               </button>
             </div>
-            <p class="text-red mt-[10px]">
-              (This URL will be used by the client to register on the website.)
-            </p>
+
+            <div
+              class="w-full space-y-5 flex flex-col items-center shadow-cardShadow text-center rounded-[10px] p-5 hover:border border-purple"
+            >
+              <div class="flex items-center gap-[10px]">
+                <div
+                  class="rounded-full w-[35px] h-[35px] border border-purple flex items-center justify-center"
+                >
+                  <img src="../../assets/icons/monthly.svg" alt="" />
+                </div>
+
+                <p class="font-SogoeUIBold text-[20px]">Monthly</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <div
+                  class="bg-[rgba(139,32,244,0.05)] w-7 h-7 min-w-7 rounded-full flex items-center justify-center"
+                >
+                  <img
+                    src="../../assets/icons/check-line-purple.svg"
+                    class="w-[16px] h-[16px]"
+                    alt=""
+                  />
+                </div>
+
+                <p class="font-SogoeUI text-xs">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+              </div>
+
+              <p class="font-SogoeUIBold text-[20px]">$250</p>
+              <button
+                class="bg-purple flex items-center justify-center rounded py-[10px] w-full text-white font-SogoeUI"
+              >
+                Purchase
+              </button>
+            </div>
+
+            <div
+              class="w-full space-y-5 flex flex-col items-center shadow-cardShadow text-center rounded-[10px] p-5 hover:border border-green2"
+            >
+              <div class="flex items-center gap-[10px]">
+                <div
+                  class="rounded-full w-[35px] h-[35px] border border-green2 flex items-center justify-center"
+                >
+                  <img src="../../assets/icons/yearly.svg" alt="" />
+                </div>
+
+                <p class="font-SogoeUIBold text-[20px]">Yearly</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <div
+                  class="bg-[rgba(36,149,163,0.05)] w-7 h-7 min-w-7 rounded-full flex items-center justify-center"
+                >
+                  <img
+                    src="../../assets/icons/check-line-green.svg"
+                    class="w-[16px] h-[16px]"
+                    alt=""
+                  />
+                </div>
+
+                <p class="font-SogoeUI text-xs">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+              </div>
+
+              <p class="font-SogoeUIBold text-[20px]">$1250</p>
+              <button
+                class="bg-green2 flex items-center justify-center rounded py-[10px] w-full text-white font-SogoeUI"
+              >
+                Purchase
+              </button>
+            </div>
+
+            <div
+              class="w-full space-y-5 flex flex-col items-center shadow-cardShadow text-center rounded-[10px] p-5 hover:border border-blue"
+            >
+              <div class="flex items-center gap-[10px]">
+                <div
+                  class="rounded-full w-[35px] h-[35px] border border-blue flex items-center justify-center"
+                >
+                  <img src="../../assets/icons/lifetime.svg" alt="" />
+                </div>
+
+                <p class="font-SogoeUIBold text-[20px]">Life Time</p>
+              </div>
+
+              <div class="flex items-center gap-1">
+                <div
+                  class="bg-[rgba(29,130,245,0.05)] w-7 h-7 min-w-7 rounded-full flex items-center justify-center"
+                >
+                  <img
+                    src="../../assets/icons/check-line-blue.svg"
+                    class="w-[16px] h-[16px]"
+                    alt=""
+                  />
+                </div>
+
+                <p class="font-SogoeUI text-xs">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                </p>
+              </div>
+
+              <p class="font-SogoeUIBold text-[20px]">$1250</p>
+              <button
+                class="bg-blue flex items-center justify-center rounded py-[10px] w-full text-white font-SogoeUI"
+              >
+                Purchase
+              </button>
+            </div>
           </div>
-
-          <button
-            class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[40px] ml-2 lg:ml-5"
-          >
-            <img
-              src="../../assets/icons/Icon feather-check.svg"
-              class="w-[17px] h-[11px]"
-            />
-            Save
-          </button>
         </div>
-
-        <!-- Client Sign Up Settings End -->
+        <!-- PERCEPTRADER AI End -->
       </main>
     </div>
 
@@ -543,18 +648,18 @@
 
       const sidebarItems = document.querySelectorAll(".sidebar-item");
 
-      //   const tabItems = document.querySelectorAll(".tab");
+      // const tabItems = document.querySelectorAll(".tab");
 
-      //   tabItems.forEach((item) => {
-      //     item.addEventListener("click", () => {
-      //       const activeTab = document.querySelector(".tab.active-tab");
+      // tabItems.forEach((item) => {
+      //   item.addEventListener("click", () => {
+      //     const activeTab = document.querySelector(".tab.active-tab");
 
-      //       if (activeTab) {
-      //         activeTab.classList.remove("active-tab");
-      //       }
-      //       item.classList.add("active-tab");
-      //     });
+      //     if (activeTab) {
+      //       activeTab.classList.remove("active-tab");
+      //     }
+      //     item.classList.add("active-tab");
       //   });
+      // });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {

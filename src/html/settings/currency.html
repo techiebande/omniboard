@@ -178,6 +178,45 @@
               Settings
             </p>
           </a>
+
+          <a
+            href="/html/services.html"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+          >
+            <div class="top-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div class="bottom-right-rounded hidden">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div id="icon-wrapper" class="hidden">
+              <img
+                src="../../assets/icons/service-line-active.svg"
+                alt=""
+                class="z-50 w-[21px] h-[19]"
+              />
+            </div>
+
+            <div
+              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+            >
+              <img
+                src="../../assets/icons/service-line-inactive.svg"
+                alt=""
+                class="z-50 w-[21px] h-[19]"
+              />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Services
+            </p>
+          </a>
         </div>
       </aside>
       <!-- Sidebar End -->
@@ -392,7 +431,7 @@
               >
             </button>
             <button
-              id="addNewUserButton"
+              id="addNewCurrencyButton"
               class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
             >
               <img
@@ -499,6 +538,201 @@
           </div>
         </div>
         <!-- Business Adress Settings End -->
+
+        <!-- Add currency modal start -->
+        <div
+          id="addCurrencyModal"
+          class="hidden fixed top-0 left-0 w-[100vw] h-[100vh] bg-transparentBlack items-center justify-center z-[90]"
+        >
+          <div
+            id="addCurrencyModalContent"
+            class="relative w-[95%] md:w-[70%] h-[80%] bg-white rounded-[20px] z-[90] pt-10 pb-6 overflow-y-auto"
+          >
+            <div
+              class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between"
+            >
+              <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+                ADD NEW CURRENCY
+              </h2>
+              <button id="addNewCurrencyCloseButton">
+                <img
+                  src="../../assets/icons/close-line.svg"
+                  alt=""
+                  class="w-4 h-4 cursor-pointer"
+                />
+              </button>
+            </div>
+            <form class="px-3 md:px-[60px] mt-5">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-y-5 gap-x-[48px]"
+              >
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Currency Name <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="John Hyatt"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Currency symbol <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="email"
+                    name=""
+                    placeholder="example@example.com"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Currency code <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="123Password"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Relationship <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="123Password"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <p class="text-sm">Is Cryptocurrency</p>
+                  <div class="flex items-center gap-5">
+                    <label class="flex items-center gap-[6px]">
+                      <input type="radio" name="isCrypto" class="hidden" />
+                      <div
+                        class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                      ></div>
+                      Yes
+                    </label>
+
+                    <label class="flex items-center gap-[6px]">
+                      <input type="radio" name="isCrypto" class="hidden" />
+                      <div
+                        class="border border-grey3 w-[14px] h-[14px] rounded-full"
+                      ></div>
+                      No
+                    </label>
+                  </div>
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Exchange Rate<span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="e.g 1000"
+                  />
+                  <p class="text-black2">(USD TO USD)</p>
+                  <p
+                    class="text-blue font-SogoeUISemibold text-sm flex items-center gap-1 mt-5"
+                  >
+                    <img src="../../assets/icons/key.svg" alt="" />
+                    Fetch latest exchange rate
+                  </p>
+                </div>
+              </div>
+            </form>
+
+            <div
+              class="relative py-4 px-3 md:px-[60px] bg-lightBlue flex items-center justify-between mt-5"
+            >
+              <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+                CURRENCY FORMAT SETTINGS
+              </h2>
+            </div>
+
+            <form class="px-3 md:px-[60px] mt-5">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-y-5 gap-x-[48px]"
+              >
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for="">Currency position </label>
+                  <select
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                  >
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                  </select>
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Thousand Separator <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder=","
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Decimal Separator <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="email"
+                    name=""
+                    placeholder="."
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <label class="text-sm" for=""
+                    >Relationship <span class="text-red">*</span></label
+                  >
+                  <input
+                    class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2"
+                    type="text"
+                    name=""
+                    placeholder="2"
+                  />
+                </div>
+
+                <div class="space-y-[10px] flex flex-col">
+                  <p class="text-black2">Example - $1,234,567.89</p>
+                </div>
+              </div>
+            </form>
+            <div class="w-full border-t px-2 md:px-[60px] mt-5">
+              <button
+                class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[15px]"
+              >
+                <img
+                  src="../../assets/icons/Icon feather-check.svg"
+                  class="w-[17px] h-[11px]"
+                />
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Add currency modal end -->
       </main>
     </div>
 
@@ -515,24 +749,33 @@
       const dashboardItemNAme = document.querySelectorAll(".dashboardItemName");
       const mainContent = document.querySelector("#main-content");
 
+      const addNewCurrencyButton = document.querySelector(
+        "#addNewCurrencyButton"
+      );
+      const addNewCurrencyModal = document.querySelector("#addCurrencyModal");
+      const addNewCurrencyCloseButton = document.querySelector(
+        "#addNewCurrencyCloseButton"
+      );
+
+      const addUserModalContent = document.querySelector(
+        "#addUserModalContent"
+      );
+
+      addNewCurrencyButton.addEventListener("click", () => {
+        addNewCurrencyModal.classList.remove("hidden");
+        addNewCurrencyModal.classList.add("flex");
+      });
+
+      addNewCurrencyCloseButton.addEventListener("click", () => {
+        addNewCurrencyModal.classList.remove("flex");
+        addNewCurrencyModal.classList.add("hidden");
+      });
+
       const dropdownMenuButton = document.querySelector(
         "#dropdown-menu-button"
       );
 
       const sidebarItems = document.querySelectorAll(".sidebar-item");
-
-      //   const tabItems = document.querySelectorAll(".tab");
-
-      //   tabItems.forEach((item) => {
-      //     item.addEventListener("click", () => {
-      //       const activeTab = document.querySelector(".tab.active-tab");
-
-      //       if (activeTab) {
-      //         activeTab.classList.remove("active-tab");
-      //       }
-      //       item.classList.add("active-tab");
-      //     });
-      //   });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {
@@ -563,6 +806,17 @@
           if (target !== userDropdown && !userDropdown.contains(target)) {
             userDropdown.classList.add("hidden");
           }
+        }
+      });
+
+      addNewCurrencyModal.addEventListener("click", (event) => {
+        const target = event.target;
+        if (
+          target !== addCurrencyModalContent &&
+          !addCurrencyModalContent.contains(target)
+        ) {
+          addNewCurrencyModal.classList.remove("flex");
+          addNewCurrencyModal.classList.add("hidden");
         }
       });
 

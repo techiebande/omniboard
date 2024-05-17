@@ -146,7 +146,7 @@
 
           <a
             href="/html/settings/company.html"
-            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -180,8 +180,8 @@
           </a>
 
           <a
-            href="/html/services.html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            href="/html/services/expert-advicers.html"
+            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -297,7 +297,7 @@
         <!-- User Dropdown -->
         <div
           id="user-dropdown"
-          class="hidden lg:hidden w-[200px] fixed top-[65px] shadow right-0 bg-white p-2 space-y-4 rounded-md z-[70]"
+          class="hidden lg:hidden w-[200px] fixed top-[65px] z-[70] shadow right-0 bg-white p-2 space-y-4 rounded-md"
         >
           <div class="items-center gap-[14px] mr-3 flex">
             <div
@@ -332,57 +332,37 @@
 
         <!-- Tabs Start -->
         <div
-          class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto bg-inputBg z-[55]"
+          class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto bg-inputBg sticky top-[83px] z-[55]"
         >
           <a
-            href="/html/settings/company.html"
-            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Company Settings</span>
-          </a>
-          <a
-            href="/html/settings/business-address.html"
-            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap">Business Address</span>
-          </a>
-          <a
-            href="/html/settings/app.html"
+            href="/html/services/expert-advicers.html"
             class="tab active-tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">App Settings</span>
+            <span class="text-nowrap">Expert Advisers</span>
           </a>
           <a
-            href="/html/settings/profile.html"
+            href="/html/services/virtual-private-servers.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Profile Settings</span>
+            <span class="text-nowrap">Virtual Private Servers</span>
           </a>
           <a
-            href="/html/settings/notifications.html"
+            href="/html/services/licences.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Notification Settings</span>
+            <span class="text-nowrap">Licences</span>
           </a>
           <a
-            href="/html/settings/currency.html"
+            href="/html/servicess/telegram.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Currency Settings</span>
+            <span class="text-nowrap">Telegram</span>
           </a>
           <a
-            href="/html/settings/payment-credentials.html"
+            href="/html/services/fx-signal-set.html"
             class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
           >
-            <span class="text-nowrap">Payment Credentials</span>
-          </a>
-          <a
-            href="/html/settings/more.html"
-            class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2 bg-inputBg"
-          >
-            <span class="text-nowrap"
-              >More <i class="ri-arrow-down-s-line text-grey1"></i
-            ></span>
+            <span class="text-nowrap">FX Signal Set</span>
           </a>
         </div>
         <!-- Tabs End -->
@@ -392,135 +372,78 @@
           class="flex flex-col space-y-5 lg:flex-row justify-between px-2 lg:px-5 mt-5"
         >
           <div>
-            <p class="font-SogoeUISemibold text-[24px] text-black">Settings</p>
+            <p class="font-SogoeUISemibold text-[24px] text-black">Services</p>
             <span class="font-SogoeUI text-sm text-grey3"
-              >Home / App Settings</span
+              >Home / Expert Advicers</span
             >
-          </div>
-          <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
-            <button
-              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
-            >
-              <img
-                src="../../assets/icons/upload.svg"
-                alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
-              />
-              <span class="lg:text-sm text-xs rounded-[4px]">Import</span>
-            </button>
-            <button
-              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
-            >
-              <img
-                src="../../assets/icons/filter.svg"
-                alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
-              />
-              <span class="lg:text-sm text-xs rounded-[4px]">Filter</span>
-            </button>
-            <button
-              class="flex bg-blue text-white items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-[4px]"
-            >
-              <img
-                src="../../assets/icons/download.svg"
-                alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
-              />
-              <span class="text-xs lg:text-sm text-nowrap"
-                >Download Report</span
-              >
-            </button>
           </div>
         </div>
         <!-- Page Detail End -->
 
-        <!-- Client Sign Up Settings Start -->
-        <div class="bg-white rounded-[20px] mt-5 mx-2 lg:mx-5 pb-5">
+        <!-- Expert Services Start -->
+        <div class="bg-white rounded-[20px] pt-5 mt-5 pb-6 mx-2 lg:mx-5">
           <div
-            class="flex items-start text-[14px] font-SogoeUISemibold overflow-x-auto border-b z-[55] rounded-tl-[20px] rounded-tr-[20px]"
+            class="relative py-4 px-3 md:px-[32px] bg-lightBlue flex items-center justify-between"
           >
-            <a
-              href="/html/settings/app.html"
-              class="tab flex text-grey3 items-center justify-center py-[14px] px-5 border border-grey2"
-            >
-              <span class="text-nowrap">App Settings</span>
-            </a>
-            <a
-              href="/html/settings/client-signup-settings.html"
-              class="tab flex text-grey3 items-center active-tab justify-center py-[14px] px-5 border border-grey2"
-            >
-              <span class="text-nowrap">Client Sign Up Settings</span>
-            </a>
+            <h2 class="font-SogoeUIBold text-darkBlue text-[20px]">
+              Expert Advicers
+            </h2>
           </div>
 
           <div
-            class="w-full flex justify-between gap-5 mt-5 pl-2 lg:pl-5 pr-2 md:pr-20"
+            class="grid grid-cols-1 gap-5 xl:grid-cols-2 mt-5 px-3 md:px-5 lg:pr-[126px]"
           >
-            <label
-              class="font-SogoeUI text-sm text-darkBlue flex items-center"
-              for="employee-export-data"
+            <div
+              class="flex flex-col xl:flex-row gap-5 w-full p-[10px] rounded-[10px] shadow-cardShadow"
             >
-              <input
-                id="employee-export-data"
-                type="checkbox"
-                class="appearance-none"
-              />
               <div
-                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-              >
-                <i class="ri-check-line hidden text-white"></i>
-              </div>
-              Employee can export data</label
-            >
+                class="w-full xl:w-[158px] min-w-[158px] h-[158px] bg-[url('../../src/assets/img/hero.png')] bg-center bg-cover rounded-[10px]"
+              ></div>
 
-            <label
-              class="font-SogoeUI text-sm text-darkBlue flex items-center"
-              for="appr"
-            >
-              <input id="appr" type="checkbox" class="appearance-none" />
-              <div
-                class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
-              >
-                <i class="ri-check-line hidden text-white"></i>
+              <div class="flex flex-col gap-y-[10px]">
+                <p class="font-SogoeUIBold text-darkBlue">PERCEPTRADER AI</p>
+                <p class="text-xs font-SogoeUI text-darkBlue2 mt-[10px]">
+                  Perceptrader AI is a cutting-edge grid trading system that
+                  leverages the power of Artificial Intelligence...
+                </p>
+                <a
+                  href="/html/services/perceptrader-ai-demo-acct.html"
+                  class="mt-auto"
+                >
+                  <button
+                    class="rounded flex items-center justify-center w-full bg-blue py-[10px] text-white font-SogoeUISemibold text-sm text-nowrap"
+                  >
+                    Use this Expert Adviser
+                  </button>
+                </a>
               </div>
-              Need admin approval after client sign up</label
-            >
-          </div>
-
-          <div class="mt-5 px-2 lg:px-5 text-sm font-SogoeUI text-darkBlue">
-            <p class="">Client Signup URL</p>
+            </div>
 
             <div
-              class="flex flex-col md:flex-row gap-[10px] md:items-center mt-5"
+              class="flex flex-col xl:flex-row gap-5 w-full p-[10px] rounded-[10px] shadow-cardShadow"
             >
-              <p>
-                https://demo-saas.worksuite.biz/client-signup/c7c08eb1d5f88aea84eb861641e565e5
-              </p>
+              <div
+                class="w-full xl:w-[158px] min-w-[158px] h-[158px] bg-[url('../../src/assets/img/hero.png')] bg-center bg-cover rounded-[10px]"
+              ></div>
 
-              <button
-                class="rounded-[4px] w-[96px] px-5 py-[10px] border border-grey3 flex items-center gap-[9px]"
-              >
-                <i class="ri-file-copy-fill w-[17px] h-[19px]"></i>
-                Copy
-              </button>
+              <div class="flex flex-col gap-y-[10px]">
+                <p class="font-SogoeUIBold text-darkBlue">EVENING SCALPER</p>
+                <p class="text-xs font-SogoeUI text-darkBlue2 mt-[10px]">
+                  Evening Scalper Pro a state-of-the-art mean-reversion trading
+                  system that operates during the American trading session...
+                </p>
+                <a href="/html/services/evening-scalper.html" class="mt-auto">
+                  <button
+                    class="rounded flex items-center justify-center w-full bg-blue py-[10px] text-white font-SogoeUISemibold text-sm text-nowrap"
+                  >
+                    Use this Expert Adviser
+                  </button>
+                </a>
+              </div>
             </div>
-            <p class="text-red mt-[10px]">
-              (This URL will be used by the client to register on the website.)
-            </p>
           </div>
-
-          <button
-            class="bg-blue w-[109px] flex items-center justify-center gap-[10px] text-white font-SogoeUI rounded-[5px] h-[38px] mt-[40px] ml-2 lg:ml-5"
-          >
-            <img
-              src="../../assets/icons/Icon feather-check.svg"
-              class="w-[17px] h-[11px]"
-            />
-            Save
-          </button>
         </div>
-
-        <!-- Client Sign Up Settings End -->
+        <!-- Expert Services End -->
       </main>
     </div>
 
@@ -543,18 +466,18 @@
 
       const sidebarItems = document.querySelectorAll(".sidebar-item");
 
-      //   const tabItems = document.querySelectorAll(".tab");
+      // const tabItems = document.querySelectorAll(".tab");
 
-      //   tabItems.forEach((item) => {
-      //     item.addEventListener("click", () => {
-      //       const activeTab = document.querySelector(".tab.active-tab");
+      // tabItems.forEach((item) => {
+      //   item.addEventListener("click", () => {
+      //     const activeTab = document.querySelector(".tab.active-tab");
 
-      //       if (activeTab) {
-      //         activeTab.classList.remove("active-tab");
-      //       }
-      //       item.classList.add("active-tab");
-      //     });
+      //     if (activeTab) {
+      //       activeTab.classList.remove("active-tab");
+      //     }
+      //     item.classList.add("active-tab");
       //   });
+      // });
 
       sidebarItems.forEach((item) => {
         item.addEventListener("click", () => {
