@@ -1,6 +1,6 @@
-.active-sidebar-item.sidebar-item {
+/* .active-sidebar-item.sidebar-item {
   background-color: #eaedf7;
-}
+} */
 .active-sidebar-item.sidebar-item .top-right-rounded {
   display: block;
   position: absolute;
@@ -25,7 +25,7 @@
 .active-sidebar-item.sidebar-item .top-right-rounded div:nth-child(2) {
   width: 40px;
   height: 40px;
-  background-color: #eaedf7;
+  /* background-color: #eaedf7; */
 }
 
 .active-sidebar-item.sidebar-item .bottom-right-rounded div:first-child {
@@ -38,7 +38,7 @@
 .active-sidebar-item.sidebar-item .bottom-right-rounded div:nth-child(2) {
   width: 40px;
   height: 40px;
-  background-color: #eaedf7;
+  /* background-color: #eaedf7; */
 }
 .active-sidebar-item.sidebar-item #icon-wrapper {
   display: flex;

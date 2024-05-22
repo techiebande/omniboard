@@ -7,6 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <script src="../assets/js/enable-theme.js"></script>
     <link rel="stylesheet" href="../css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -103,16 +104,16 @@
 
           <a
             href="/html/messages.html"
-            class="sidebar-item active-sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="sidebar-item active-sidebar-item flex bg-bodyBg dark:bg-grey14 items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full"
           >
             <div class="top-right-rounded hidden">
               <div></div>
-              <div></div>
+              <div class="dark:bg-grey14 bg-bodyBg"></div>
             </div>
 
             <div class="bottom-right-rounded hidden">
               <div></div>
-              <div></div>
+              <div class="dark:bg-grey14 bg-bodyBg"></div>
             </div>
 
             <div id="icon-wrapper" class="hidden">
@@ -130,7 +131,7 @@
             </div>
 
             <p
-              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1 dark:text-blue"
             >
               Messages
             </p>
@@ -215,25 +216,35 @@
 
       <main
         id="main-content"
-        class="flex flex-col relative w-[calc(100%-72px)] lg:w-[calc(100%-240px)]"
+        class="flex flex-col relative w-[calc(100%-72px)] lg:w-[calc(100%-240px)] dark:bg-grey14"
       >
         <!-- Navbar start -->
         <nav
-          class="h-[83px] w-full flex items-center bg-white px-2 md:px-5 lg:justify-between sticky top-0 z-[60]"
+          class="h-[83px] w-full flex items-center bg-white dark:bg-sideBarBg px-2 md:px-5 lg:justify-between sticky top-0 z-[60]"
         >
           <div class="hidden lg:block">
             <button id="sidebarFoldButton">
               <img
                 src="../assets/icons/menu-fold-line.svg"
                 alt="toggle sidebar state icon"
-                class="w-[20px] h-5"
+                class="w-[20px] h-5 dark:hidden"
+              />
+              <img
+                src="../assets/icons/menu-fold-line-white.svg"
+                alt="toggle sidebar state icon"
+                class="w-[20px] h-5 hidden dark:block"
               />
             </button>
             <button class="hidden" id="sidebarUnfoldButton">
               <img
                 src="../assets/icons/menu-unfold-line.svg"
                 alt="toggle sidebar state icon"
-                class="w-[20px] h-[20px]"
+                class="w-[20px] h-[20px] dark:hidden"
+              />
+              <img
+                src="../assets/icons/menu-unfold-line-white.svg"
+                alt="toggle sidebar state icon"
+                class="w-[20px] h-[20px] hidden dark:block"
               />
             </button>
           </div>
@@ -243,7 +254,7 @@
               <input
                 type="text"
                 placeholder="Search for results..."
-                class="h-10 rounded-[29px] bg-inputBg w-[150px] md:w-[259px] rounded-tr-none rounded-br-none outline-none border-none pl-5 font-SogoeUI text-sm"
+                class="h-10 rounded-[29px] w-[150px] md:w-[259px] rounded-tr-none rounded-br-none outline-none bg-inputBg dark:bg-sideBarBg dark:text-grey3 dark:border-grey11 dark:border border-0 pl-5 font-SogoeUI text-sm"
               />
               <button
                 class="bg-blue rounded-[29px] rounded-bl-none rounded-tl-none h-10 w-[46px] flex items-center justify-center"
@@ -255,21 +266,80 @@
               class="hidden lg:block w-[26px] h-[26px] bg-[url('../assets/img/flags/GB.svg')] rounded-full border bg-center bg-cover"
             ></div>
             <div class="hidden lg:flex relative w-[30px] h-[30px] items-center">
-              <img src="../assets/icons/bell.svg" alt="bell icon" />
+              <img
+                src="../assets/icons/bell.svg"
+                alt="bell icon"
+                class="dark:hidden"
+              />
+              <img
+                src="../assets/icons/white-bell-icon.svg"
+                alt="bell icon"
+                class="hidden dark:block"
+              />
+
               <p
                 class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
               >
                 <span class="relative top-[1px] w-min">18</span>
               </p>
             </div>
+
+            <!-- theme toggle button -->
+            <div class="flex flex-col justify-center">
+              <label class="relative cursor-pointer p-2" for="light-switch">
+                <input
+                  id="light-switch"
+                  type="checkbox"
+                  name="light-switch"
+                  class="light-switch sr-only"
+                />
+                <svg
+                  class="hidden dark:block"
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="fill-slate-300"
+                    d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z"
+                  />
+                  <path
+                    class="fill-slate-400"
+                    d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"
+                  />
+                </svg>
+                <svg
+                  class="dark:hidden"
+                  width="16"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="fill-slate-400"
+                    d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z"
+                  />
+                  <path
+                    class="fill-slate-500"
+                    d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z"
+                  />
+                </svg>
+                <span class="sr-only">Switch to light / dark version</span>
+              </label>
+            </div>
+            <!-- theme toggle button end -->
+
             <div class="hidden lg:flex items-center gap-[14px] mr-3">
               <div
                 class="bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-full bg-center bg-cover"
               ></div>
               <div class="items-start gap-1 hidden lg:flex">
                 <div class="flex flex-col gap-1">
-                  <p class="poppins-medium text-sm">Marvel Major</p>
-                  <span class="text-[9px] poppins-regular">Super Admin</span>
+                  <p class="poppins-medium text-sm dark:text-grey12">
+                    Marvel Major
+                  </p>
+                  <span class="text-[9px] poppins-regular dark:text-grey13"
+                    >Super Admin</span
+                  >
                 </div>
 
                 <i class="ri-arrow-down-s-line text-grey1"></i>
@@ -278,7 +348,16 @@
           </div>
           <div id="dropdown-menu-button" class="lg:hidden ml-auto">
             <button class="w-6 h-6">
-              <img src="../assets/icons/menu-line.svg" alt="" />
+              <img
+                src="../assets/icons/menu-line.svg"
+                alt=""
+                class="dark:hidden"
+              />
+              <img
+                src="../assets/icons/menu-line-white.svg"
+                alt=""
+                class="hidden dark:block"
+              />
             </button>
           </div>
         </nav>
@@ -287,7 +366,7 @@
         <!-- User Dropdown -->
         <div
           id="user-dropdown"
-          class="hidden lg:hidden w-[200px] fixed top-[65px] shadow right-0 bg-white p-2 space-y-4 rounded-md z-[70]"
+          class="hidden lg:hidden w-[200px] fixed top-[83px] shadow right-0 bg-white dark:bg-sideBarBg p-2 space-y-4 rounded-md z-[70]"
         >
           <div class="items-center gap-[14px] mr-3 flex">
             <div
@@ -295,8 +374,12 @@
             ></div>
             <div class="items-start gap-1 flex">
               <div class="flex flex-col gap-1">
-                <p class="poppins-medium text-sm">Marvel Major</p>
-                <span class="text-[9px] poppins-regular">Super Admin</span>
+                <p class="poppins-medium text-sm dark:text-grey12">
+                  Marvel Major
+                </p>
+                <span class="text-[9px] poppins-regular dark:text-grey13"
+                  >Super Admin</span
+                >
               </div>
 
               <i class="ri-arrow-down-s-line text-grey1"></i>
@@ -307,7 +390,17 @@
               class="w-[26px] h-[26px] bg-[url('../assets/img/flags/GB.svg')] rounded-full border bg-center bg-cover"
             ></div>
             <div class="flex relative w-[30px] h-[30px] items-center">
-              <img src="../assets/icons/bell.svg" alt="bell icon" />
+              <img
+                src="../assets/icons/bell.svg"
+                alt="bell icon"
+                class="dark:hidden"
+              />
+              <img
+                src="../assets/icons/white-bell-icon.svg"
+                alt="bell icon"
+                class="hidden dark:block"
+              />
+
               <p
                 class="absolute -top-2 right-0 bg-brightRed rounded-full text-[10px] w-[21px] h-[21px] flex items-center justify-center text-white poppins-semibold"
               >
@@ -323,27 +416,44 @@
           class="flex flex-col space-y-5 lg:flex-row justify-between px-2 lg:px-5 mt-5"
         >
           <div>
-            <p class="font-SogoeUISemibold text-[24px] text-black">Users</p>
-            <span class="font-SogoeUI text-sm text-grey3">Home / Messages</span>
+            <p
+              class="font-SogoeUISemibold text-[24px] text-black dark:text-white"
+            >
+              Messages
+            </p>
+            <span class="font-SogoeUI text-sm text-grey3 dark:text-grey15"
+              >Home / Messages</span
+            >
           </div>
           <div class="flex flex-wrap lg:gap-0 lg:space-x-5 gap-2">
             <button
-              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
+              class="flex bg-white dark:bg-sideBarBg dark:text-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
             >
               <img
                 src="../assets/icons/upload.svg"
                 alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px] dark:hidden"
+              />
+
+              <img
+                src="../assets/icons/filter-white.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px] hidden dark:block"
               />
               <span class="lg:text-sm text-xs rounded-[4px]">Import</span>
             </button>
             <button
-              class="flex bg-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
+              class="flex bg-white dark:bg-sideBarBg dark:text-white text-blue items-center justify-center gap-[7px] h-[38px] px-[15px] lg:px-[10px] rounded-1"
             >
               <img
                 src="../assets/icons/filter.svg"
                 alt=""
-                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px]"
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px] dark:hidden"
+              />
+              <img
+                src="../assets/icons/import-white.svg"
+                alt=""
+                class="w-[14px] h-[14px] lg:w-5 lg:h-[18px] hidden dark:block"
               />
               <span class="lg:text-sm text-xs rounded-[4px]">Filter</span>
             </button>
@@ -366,7 +476,7 @@
         <!-- Messages Section Start -->
         <div class="grid grid-cols-1 lg:grid-cols-12 px-5 mt-5 gap-5 mb-5">
           <div
-            class="flex flex-col col-span-12 lg:col-span-5 items-center bg-white rounded-[20px] py-5"
+            class="flex flex-col col-span-12 lg:col-span-5 items-center bg-white dark:bg-sideBarBg dark:text-grey2 rounded-[20px] py-5"
           >
             <div
               class="flex justify-center items-center mr-3 lg:mr-5 w-full px-2"
@@ -374,7 +484,7 @@
               <input
                 type="text"
                 placeholder="Search Messages"
-                class="h-10 rounded-[29px] w-full md:w-[60%] rounded-tr-none rounded-br-none outline-none bg-inputBg border-none pl-5 font-SogoeUI text-sm"
+                class="h-10 rounded-[29px] w-full md:w-[60%] rounded-tr-none rounded-br-none outline-none bg-inputBg dark:bg-sideBarBg dark:text-grey3 dark:border-grey11 dark:border border-0 pl-5 font-SogoeUI text-sm"
               />
               <button
                 class="bg-blue rounded-[29px] rounded-bl-none rounded-tl-none h-10 w-[46px] flex items-center justify-center"
@@ -386,7 +496,7 @@
               class="flex lg:flex-col gap-x-2 lg:gap-x-5 mt-5 w-full overflow-x-auto lg:overflow-x-hidden lg:pb-10"
             >
               <div
-                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] lg:bg-inputBg px-[14px] w-full"
+                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] lg:bg-inputBg dark:lg:bg-darkBlue dark:border-grey11 px-[14px] w-full"
               >
                 <div
                   class="relative bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
@@ -407,7 +517,7 @@
               </div>
 
               <div
-                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full"
+                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full dark:border-grey11"
               >
                 <div
                   class="relative bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
@@ -433,7 +543,7 @@
               </div>
 
               <div
-                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full"
+                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full dark:border-grey11"
               >
                 <div
                   class="relative bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
@@ -454,7 +564,7 @@
               </div>
 
               <div
-                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full"
+                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full dark:border-grey11"
               >
                 <div
                   class="relative bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
@@ -480,7 +590,7 @@
               </div>
 
               <div
-                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full"
+                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full dark:border-grey11"
               >
                 <div
                   class="relative bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
@@ -501,7 +611,7 @@
               </div>
 
               <div
-                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full"
+                class="lg:flex lg:gap-[14px] cursor-pointer lg:border-t lg:border-b py-1 lg:py-[13px] px-[14px] w-full dark:border-grey11"
               >
                 <div
                   class="relative bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
@@ -527,7 +637,9 @@
               </div>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-7 bg-white rounded-[20px] pb-5">
+          <div
+            class="col-span-12 lg:col-span-7 bg-white dark:bg-sideBarBg dark:text-grey2 rounded-[20px] pb-5"
+          >
             <div class="flex items-center border-b justify-between px-5 py-5">
               <div class="flex items-center gap-[14px] mr-3">
                 <div
@@ -556,7 +668,7 @@
 
             <div class="mt-3 flex items-center justify-center">
               <p
-                class="px-[9px] py-1 font-SogoeUIBold text-xs bg-blue2 rounded-[4px]"
+                class="px-[9px] py-1 font-SogoeUIBold text-xs bg-blue2 dark:bg-darkBlue dark:text-grey2 rounded-[4px]"
               >
                 2 DAYS AGO
               </p>
@@ -566,11 +678,11 @@
               <div class="flex flex-col gap-y-[4.5px]">
                 <div class="ml-auto flex items-start gap-[10px]">
                   <p
-                    class="bg-bodyBg py-3 px-[10px] w-[90%] lg:w-auto ml-auto relative z-50"
+                    class="bg-bodyBg dark:bg-darkBlue dark:text-grey2 py-3 px-[10px] w-[90%] lg:w-auto ml-auto relative z-50"
                   >
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     <span
-                      class="absolute top-[3px] -right-1 w-5 h-5 bg-bodyBg rotate-45 z-0"
+                      class="absolute top-[3px] -right-1 w-5 h-5 bg-bodyBg dark:bg-darkBlue rotate-45 z-0"
                     ></span>
                   </p>
                   <div
@@ -579,7 +691,7 @@
                 </div>
                 <div class="ml-auto">
                   <p
-                    class="bg-bodyBg py-3 px-[10px] w-[90%] lg:w-auto mr-[45px]"
+                    class="bg-bodyBg dark:bg-darkBlue dark:text-grey2 y-3 px-[10px] w-[90%] lg:w-auto mr-[45px]"
                   >
                     consetetur sadipscing elitr, sed...
                   </p>
@@ -595,11 +707,11 @@
                     class="bg-[url('../assets/img/users/marvel.svg')] w-[35px] h-[35px] rounded-[4px] bg-center bg-cover"
                   ></div>
                   <p
-                    class="bg-bodyBg py-3 px-[10px] w-[90%] lg:w-auto relative z-50"
+                    class="bg-bodyBg dark:bg-darkBlue dark:text-grey2 py-3 px-[10px] w-[90%] lg:w-auto relative z-50"
                   >
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     <span
-                      class="absolute top-[3px] -left-1 w-5 h-5 bg-bodyBg rotate-45 z-0"
+                      class="absolute top-[3px] -left-1 w-5 h-5 bg-bodyBg dark:bg-darkBlue rotate-45 z-0"
                     ></span>
                   </p>
                 </div>
@@ -612,11 +724,11 @@
               <div class="flex flex-col gap-y-[4.5px] mt-10">
                 <div class="ml-auto flex items-start gap-[10px]">
                   <p
-                    class="bg-bodyBg py-3 px-[10px] w-[90%] lg:w-auto ml-auto relative z-50"
+                    class="bg-bodyBg dark:bg-darkBlue dark:text-grey2 py-3 px-[10px] w-[90%] lg:w-auto ml-auto relative z-50"
                   >
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     <span
-                      class="absolute top-[3px] -right-1 w-5 h-5 bg-bodyBg rotate-45 z-0"
+                      class="absolute top-[3px] -right-1 w-5 h-5 bg-bodyBg dark:bg-darkBlue rotate-45 z-0"
                     ></span>
                   </p>
                   <div
@@ -631,7 +743,7 @@
 
             <div class="mt-[63.5px] flex items-center justify-center">
               <p
-                class="px-[9px] py-1 font-SogoeUIBold text-xs bg-blue2 rounded-[4px]"
+                class="px-[9px] py-1 font-SogoeUIBold text-xs bg-blue2 dark:bg-darkBlue dark:text-grey2 rounded-[4px]"
               >
                 YESTERDAY
               </p>
@@ -641,6 +753,8 @@
         <!-- Messages Section End -->
       </main>
     </div>
+
+    <script src="../assets/js/theme-toggle.js"></script>
 
     <script>
       const body = document.querySelector("body");
