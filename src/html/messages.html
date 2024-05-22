@@ -42,7 +42,7 @@
         <div class="w-full mt-[33px] flex flex-col gap-[30px] pl-[15px]">
           <a
             href="/html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -52,41 +52,6 @@
             <div class="bottom-right-rounded hidden">
               <div></div>
               <div></div>
-            </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img src="../assets/icons/Home-active.svg" alt="" class="z-50" />
-            </div>
-
-            <div
-              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
-            >
-              <img src="../assets/icons/Home.svg" alt="" class="z-50" />
-            </div>
-
-            <p
-              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
-            >
-              Dashboard
-            </p>
-          </a>
-
-          <a
-            href="/html/users.html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
-          >
-            <div class="top-right-rounded hidden">
-              <div></div>
-              <div></div>
-            </div>
-
-            <div class="bottom-right-rounded hidden">
-              <div></div>
-              <div></div>
-            </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img src="../assets/icons/Users-active.svg" alt="" class="z-50" />
             </div>
 
             <div
@@ -98,36 +63,59 @@
             <p
               class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
             >
-              Users
+              Dashboard
             </p>
           </a>
 
           <a
-            href="/html/messages.html"
-            class="sidebar-item active-sidebar-item flex bg-bodyBg dark:bg-grey14 items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full"
+            href="/html/users.html"
+            class="flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
-              <div class="dark:bg-grey14 bg-bodyBg"></div>
+              <div></div>
             </div>
 
             <div class="bottom-right-rounded hidden">
               <div></div>
-              <div class="dark:bg-grey14 bg-bodyBg"></div>
-            </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img
-                src="../assets/icons/Message-active.svg"
-                alt=""
-                class="z-50"
-              />
+              <div></div>
             </div>
 
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
               <img src="../assets/icons/Message.svg" alt="" class="z-50" />
+            </div>
+
+            <p
+              class="dashboardItemName hidden lg:block font-SogoeUI text-grey1"
+            >
+              Users
+            </p>
+          </a>
+
+          <a
+            href="/html/messages.html"
+            class="bg-bodyBg dark:bg-grey14 sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full"
+          >
+            <div class="top-right-rounded -top-10 right-0 block absolute">
+              <div
+                class="w-10 h-10 rounded-br-[20px] absolute bg-sideBarBg"
+              ></div>
+              <div class="dark:bg-grey14 bg-bodyBg w-10 h-10"></div>
+            </div>
+
+            <div class="bottom-right-rounded -bottom-10 right-0 block absolute">
+              <div
+                class="w-10 h-10 rounded-tr-[20px] absolute bg-sideBarBg"
+              ></div>
+              <div class="dark:bg-grey14 bg-bodyBg w-10 h-10"></div>
+            </div>
+            <div
+              id="icon-wrapper"
+              class="flex bg-blue min-w-[38px] h-[38px] rounded-full items-center justify-center z-[99]"
+            >
+              <img src="../assets/icons/Home-active.svg" alt="" class="z-50" />
             </div>
 
             <p
