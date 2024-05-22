@@ -728,6 +728,14 @@ video {
   top: 83px;
 }
 
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -750,6 +758,10 @@ video {
 
 .z-\[90\] {
   z-index: 90;
+}
+
+.z-\[99\] {
+  z-index: 99;
 }
 
 .col-span-12 {
@@ -1217,6 +1229,10 @@ video {
   width: min-content;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .min-w-7 {
   min-width: 1.75rem;
 }
@@ -1231,6 +1247,10 @@ video {
 
 .min-w-\[57px\] {
   min-width: 57px;
+}
+
+.min-w-\[38px\] {
+  min-width: 38px;
 }
 
 .max-w-full {
