@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="../assets/js/enable-theme.js"></script>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="h-[100vh] bg-loginBg dark:bg-grey14 dark:text-grey2 p-2">
+      <div
+        class="bg-white dark:bg-sideBarBg dark:text-grey2 text-black3 font-SogoeUISemibold w-full md:w-[70%] lg:w-[40%] mx-auto mt-20 rounded-tl-[10px] border-b border-grey11 rounded-tr-[10px] px-[30px] pb-10 pt-[36px]"
+      >
+        <h1 class="text-[24px] text-center">Login</h1>
+        <form class="mt-10 space-y-5">
+          <div class="space-y-[10px] flex flex-col">
+            <label for="">Email Address <span class="text-red">*</span></label>
+            <input
+              class="border border-grey3 rounded-[4px] h-[38px] outline-none pl-4 text-black2 dark:bg-sideBarBg dark:text-grey2"
+              type="text"
+              name=""
+              placeholder="example@example.com"
+            />
+          </div>
+          <div class="space-y-[10px] flex flex-col w-full">
+            <label class="text-sm" for="">Password</label>
+            <div class="flex">
+              <input
+                class="border border-grey3 rounded-tl-[4px] rounded-bl-[4px] h-[38px] outline-none pl-4 text-black2 dark:bg-sideBarBg dark:text-grey2 w-full"
+                type="password"
+                name=""
+                placeholder="Must have at least 8 characters"
+              />
+              <div
+                class="w-[48px] h-[38px] flex items-center justify-center border border-grey3 rounded-tr-[4px] rounded-br-[4px]"
+              >
+                <i class="ri-eye-fill text-grey7"></i>
+              </div>
+            </div>
+          </div>
+          <label
+            class="font-SogoeUISemibold text-sm dark:text-grey2 flex items-center relative"
+            for="employee-export-data"
+          >
+            <input
+              id="employee-export-data"
+              type="checkbox"
+              class="appearance-none"
+            />
+            <div
+              class="w-[19px] min-w-[19px] h-[19px] border border-grey3 rounded-[5px] flex items-center justify-center mr-[10px]"
+            >
+              <i class="ri-check-line hidden text-white"></i>
+            </div>
+            Stay logged in</label
+          >
+          <button
+            class="bg-blue rounded-[4px] h-10 text-white flex items-center gap-x-[10px] justify-center w-full"
+          >
+            Log in
+            <i class="ri-arrow-right-line w-4 h-5"></i>
+          </button>
+        </form>
+      </div>
+      <div
+        class="bg-white flex justify-between items-center dark:bg-sideBarBg dark:text-grey2 text-black3 font-SogoeUISemibold w-full md:w-[70%] lg:w-[40%] mx-auto rounded-bl-[10px] rounded-br-[10px] px-[30px] pb-10 pt-[36px]"
+      >
+        <div class="text-grey7">
+          <p>Email: Test.seller@gmail.com</p>
+          <p>password: 12345678</p>
+        </div>
+        <div>
+          <button
+            class="rounded-[4px] px-5 py-[10px] border bg-blue border-grey3 flex items-center gap-[9px]"
+          >
+            <i class="ri-file-copy-fill text-white w-[17px] h-[19px]"></i>
+          </button>
+        </div>
+      </div>
+      <p class="text-center text-sm mt-5 font-SogoeUISemibold text-black3">
+        Don't have an account yet? <a href="/html/signup.html">Sign up</a>
+      </p>
+    </main>
+    <script src="../assets/js/theme-toggle.js"></script>
+  </body>
+</html>

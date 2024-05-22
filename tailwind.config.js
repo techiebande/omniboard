@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         bodyBg: "#EAEDF7",
         sideBarBg: "#0E0E23",
+        loginBg: "#E8EEF3",
         blue: "#1D82F5",
         blue2: "#E6F3F9",
         lightBlue: "#E4E7EB",
@@ -38,6 +39,7 @@ module.exports = {
         orange: "#ED6E00",
         pending: "#FFCC00",
         black2: "#171F29",
+        black3: "#1C2030",
         transparentBlack: "rgba(0,0,0,0.8)",
         purple: "#8120F4",
         grey11: "#272739",
