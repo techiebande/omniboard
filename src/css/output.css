@@ -732,8 +732,32 @@ video {
   top: 3px;
 }
 
+.top-\[41px\] {
+  top: 41px;
+}
+
 .top-\[83px\] {
   top: 83px;
+}
+
+.right-\[200px\] {
+  right: 200px;
+}
+
+.right-\[300px\] {
+  right: 300px;
+}
+
+.right-\[320px\] {
+  right: 320px;
+}
+
+.right-\[310px\] {
+  right: 310px;
+}
+
+.right-\[280px\] {
+  right: 280px;
 }
 
 .z-0 {
@@ -1068,6 +1092,14 @@ video {
   height: 100%;
 }
 
+.h-\[383px\] {
+  height: 383px;
+}
+
+.h-\[22px\] {
+  height: 22px;
+}
+
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -1110,6 +1142,10 @@ video {
 
 .w-\[109px\] {
   width: 109px;
+}
+
+.w-\[139px\] {
+  width: 139px;
 }
 
 .w-\[13px\] {
@@ -1231,6 +1267,10 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+
+.w-\[22px\] {
+  width: 22px;
 }
 
 .min-w-7 {
@@ -1443,6 +1483,10 @@ video {
   align-self: flex-start;
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1650,6 +1694,11 @@ video {
   border-color: rgb(129 32 244 / var(--tw-border-opacity));
 }
 
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(190 0 0 / var(--tw-border-opacity));
+}
+
 .border-red2 {
   border-color: #BE000033;
 }
@@ -1782,6 +1831,30 @@ video {
 
 .bg-\[url\(\'\.\.\/assets\/img\/users\/marvel\.svg\'\)\] {
   background-image: url('../assets/img/users/marvel.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/US\.svg\'\)\] {
+  background-image: url('../assets/img/flags/US.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/FR\.svg\'\)\] {
+  background-image: url('../assets/img/flags/FR.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/DE\.svg\'\)\] {
+  background-image: url('../assets/img/flags/DE.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/ES\.svg\'\)\] {
+  background-image: url('../assets/img/flags/ES.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/IT\.svg\'\)\] {
+  background-image: url('../assets/img/flags/IT.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/RU\.svg\'\)\] {
+  background-image: url('../assets/img/flags/RU.svg');
 }
 
 .bg-cover {
