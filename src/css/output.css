@@ -712,6 +712,10 @@ video {
   right: 0px;
 }
 
+.right-\[200px\] {
+  right: 200px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1012,6 +1016,10 @@ video {
   height: 21px;
 }
 
+.h-\[22px\] {
+  height: 22px;
+}
+
 .h-\[26px\] {
   height: 26px;
 }
@@ -1112,6 +1120,10 @@ video {
   width: 109px;
 }
 
+.w-\[139px\] {
+  width: 139px;
+}
+
 .w-\[13px\] {
   width: 13px;
 }
@@ -1154,6 +1166,10 @@ video {
 
 .w-\[21px\] {
   width: 21px;
+}
+
+.w-\[22px\] {
+  width: 22px;
 }
 
 .w-\[26px\] {
@@ -1776,8 +1792,32 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/DE\.svg\'\)\] {
+  background-image: url('../assets/img/flags/DE.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/ES\.svg\'\)\] {
+  background-image: url('../assets/img/flags/ES.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/FR\.svg\'\)\] {
+  background-image: url('../assets/img/flags/FR.svg');
+}
+
 .bg-\[url\(\'\.\.\/assets\/img\/flags\/GB\.svg\'\)\] {
   background-image: url('../assets/img/flags/GB.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/IT\.svg\'\)\] {
+  background-image: url('../assets/img/flags/IT.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/RU\.svg\'\)\] {
+  background-image: url('../assets/img/flags/RU.svg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/flags\/US\.svg\'\)\] {
+  background-image: url('../assets/img/flags/US.svg');
 }
 
 .bg-\[url\(\'\.\.\/assets\/img\/users\/marvel\.svg\'\)\] {
