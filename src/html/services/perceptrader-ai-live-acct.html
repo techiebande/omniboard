@@ -43,7 +43,7 @@
         <div class="w-full mt-[33px] flex flex-col gap-[30px] pl-[15px]">
           <a
             href="/html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -53,14 +53,6 @@
             <div class="bottom-right-rounded hidden">
               <div></div>
               <div></div>
-            </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img
-                src="../../assets/icons/Home-active.svg"
-                alt=""
-                class="z-50"
-              />
             </div>
 
             <div
@@ -78,7 +70,7 @@
 
           <a
             href="/html/users.html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
+            class="flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -88,14 +80,6 @@
             <div class="bottom-right-rounded hidden">
               <div></div>
               <div></div>
-            </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img
-                src="../../assets/icons/Users-active.svg"
-                alt=""
-                class="z-50"
-              />
             </div>
 
             <div
@@ -124,15 +108,6 @@
               <div></div>
               <div></div>
             </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img
-                src="../../assets/icons/Message-active.svg"
-                alt=""
-                class="z-50"
-              />
-            </div>
-
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
@@ -148,7 +123,7 @@
 
           <a
             href="/html/settings/company.html"
-            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-sideBarBg"
           >
             <div class="top-right-rounded hidden">
               <div></div>
@@ -160,18 +135,14 @@
               <div></div>
             </div>
 
-            <div id="icon-wrapper" class="hidden">
-              <img
-                src="../../assets/icons/Setting-active.svg"
-                alt=""
-                class="z-50"
-              />
-            </div>
-
             <div
               class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
             >
-              <img src="../../assets/icons/Setting.svg" alt="" class="z-50" />
+              <img
+                src="../../assets/icons/Setting.svg"
+                alt=""
+                class="z-50 w-[21px] h-[19]"
+              />
             </div>
 
             <p
@@ -183,33 +154,30 @@
 
           <a
             href="/html/services/expert-advicers.html"
-            class="sidebar-item active-sidebar-item dark:bg-grey14 bg-bodyBg flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full"
+            class="sidebar-item flex items-center py-[4px] pl-[4px] gap-[10px] relative cursor-pointer rounded-tl-full rounded-bl-full bg-bodyBg dark:bg-grey14"
           >
-            <div class="top-right-rounded hidden">
-              <div></div>
-              <div class="dark:bg-grey14 bg-bodyBg"></div>
+            <div class="top-right-rounded -top-10 right-0 block absolute">
+              <div
+                class="w-10 h-10 rounded-br-[20px] absolute bg-sideBarBg"
+              ></div>
+              <div class="dark:bg-grey14 bg-bodyBg w-10 h-10"></div>
             </div>
 
-            <div class="bottom-right-rounded hidden">
-              <div></div>
-              <div class="dark:bg-grey14 bg-bodyBg"></div>
-            </div>
-
-            <div id="icon-wrapper" class="hidden">
-              <img
-                src="../../assets/icons/service-line-active.svg"
-                alt=""
-                class="z-50 w-[21px] h-[19]"
-              />
+            <div class="bottom-right-rounded -bottom-10 right-0 block absolute">
+              <div
+                class="w-10 h-10 rounded-tr-[20px] absolute bg-sideBarBg"
+              ></div>
+              <div class="dark:bg-grey14 bg-bodyBg w-10 h-10"></div>
             </div>
 
             <div
-              class="z-50 w-[38px] h-[38px] bg-transparent flex items-center justify-center rounded-full"
+              id="icon-wrapper"
+              class="flex bg-blue min-w-[38px] h-[38px] rounded-full items-center justify-center z-[99]"
             >
               <img
-                src="../../assets/icons/service-line-inactive.svg"
+                src="../../assets/icons/service-line-active.svg"
                 alt=""
-                class="z-50 w-[21px] h-[19]"
+                class="z-50 w-6 h-6"
               />
             </div>
 
@@ -221,6 +189,7 @@
           </a>
         </div>
       </aside>
+
       <!-- Sidebar End -->
 
       <main
